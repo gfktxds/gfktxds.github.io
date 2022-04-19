@@ -1,0 +1,39 @@
+{
+  "name": "jquery.fancybox",
+  "title": "fancyapps/fancyBox",
+  "description": "fancyBox offers an elegant way to present images, html content and multimedia for webpages",
+  "keywords": [
+    "lightbox",
+    "effect",
+    "responsive",
+    "modal",
+    "window",
+    "ui"
+  ],
+  "licenses": [
+    {
+      "type": "fancyBox",
+      "url": "http://fancyapps.com/fancybox/#license"
+    }
+  ],
+  "version": "2.1.5",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fancyapps/fancyBox.git"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "bugs": {
+    "url": "https://github.com/fancyapps/fancyBox/issues"
+  },
+  "homepage": "https://github.com/fancyapps/fancyBox#readme",
+  "main": "source/jquery.fancybox.pack.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fancyapps",
+  "license": "CC-BY-NC-3.0"
+}
