@@ -1,0 +1,46 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.rainbows{
+        font-size: 20pt;
+        font-family: 方正卡通;
+        font-weight: bold;
+        color: white;
+        background-image: linear-gradient(
+            to right,
+                #ccffff,
+                #ccccff,
+                #cc99ff,
+                #cc66ff,
+                #cc33ff,
+                #cc66ff,
+                #cc99ff,
+                #ccccff,
+                #ccffff
+
+
+        ); /* 注意颜色的始终要相同,不然就会有突变颜色线条,影响视觉*/
+        background-size: 110vw;
+       -webkit-background-clip: text;
+       color: transparent;
+        animation: sliding 30s linear infinite;
+    }
+
+    @keyframes sliding{
+        to{
+            background-position:  -2000vw;
+        }
+}
+
+             /* orangered,
+		orange,
+		gold,
+		lightgreen,
+		cyan,
+		dodgerblue,
+		mediumpurple,
+		hotpink,
+		orangered
+                以上彩虹色留作备用*/
