@@ -27,7 +27,11 @@
        color: transparent;
         animation: sliding 30s linear infinite;
     }
-
+    @keyframes sliding{
+        to{
+            background-position:  -2000vw;
+        }
+}
 
 #a_publish{
     font-family: '英文斜体', 华文行楷_G;
