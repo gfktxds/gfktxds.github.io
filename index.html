@@ -36,6 +36,18 @@
             alert('朋友，上古浏览器不支持呢~');
         }
 
+        function browserRedirect() {undefined
+          var sUserAgent = navigator.userAgent.toLowerCase();
+            if (/ipad|iphone|midp|rv:1.2.3.4|ucweb|android|windows ce|windows mobile/.test(sUserAgent)) {undefined
+            //跳转移动端页面
+              window.location.href="another/indexB.html";
+              } else {undefined
+            //跳转pc端页面
+              window.location.href="another/indexA.html";
+              }
+        }
+
+
     </script>
     
 <base target="_blank">
@@ -75,7 +87,7 @@
                                 <div class="author-info__description">梧桐叶上，点点露珠零</div>
                             </div>
                             <div class="card-info-social-icons is-center">
-                                 <a class="social-icon" href="another/indexA.html" style="text-decoration:none;">
+                                 <a class="social-icon" onclick="browserRedirect(this)" style="text-decoration:none;">
                                     <i class="fa fa-home"></i>
                                 </a>
                             </div>
