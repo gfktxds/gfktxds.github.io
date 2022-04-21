@@ -27,11 +27,38 @@
        color: transparent;
         animation: sliding 30s linear infinite;
     }
+.rainbows{
+        font-size: 20pt;
+        font-family: 方正卡通;
+        font-weight: bold;
+        color: white;
+        background-image: linear-gradient(
+            to right,
+                orangered,
+		        orange,
+	        	gold,
+		        lightgreen,
+		        cyan,
+		        dodgerblue,
+		        mediumpurple,
+		        hotpink,
+		        orangered
+
+
+        ); /* 注意颜色的始终要相同,不然就会有突变颜色线条,影响视觉*/
+        background-size: 110vw;
+       -webkit-background-clip: text;
+       color: transparent;
+        animation: sliding 30s linear infinite;
+    }
     @keyframes sliding{
         to{
             background-position:  -2000vw;
         }
 }
+
+
+
 
 #a_publish{
     font-family: '英文斜体', 华文行楷_G;
@@ -42,7 +69,7 @@
     color: grey;
 }
 #a_publish table tr td:first-child{
-    width:300px;
+    width:270px;
 }
 
 div.grey_alink_all a{
