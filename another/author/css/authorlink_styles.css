@@ -1,0 +1,16 @@
+a:link {
+    color:grey;
+    text-decoration:underline;
+}
+a:visited {
+    color:grey;
+    text-decoration:underline;
+}
+a:hover {
+    color:red;
+    text-decoration:underline;
+}
+a:active {
+    color:black;
+    text-decoration:underline;
+}
