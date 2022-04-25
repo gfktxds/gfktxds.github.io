@@ -59,18 +59,9 @@
 
 
 
-div i a{
+div#fold_list i a{
     color:#7B7B7B;
     text-decoration:none;
-}
-
-#a_publish{
-    font-family: '英文斜体', 华文行楷_G;
-    color: grey;
-}
-
-#a_publish>div>p{
-    font-size: 20px;
 }
 
 div.grey_alink>a{
@@ -80,22 +71,14 @@ div.grey_alink>a{
 }
 
 
-nobr.japan_a{
-    font-family: '假名字体';
-    letter-spacing:-3px;
-}
-
-a.fold-title{
+nobr.fold-title{
     color: grey;
-    text-decoration: none;
-    font-size: 2em;
+    font-size: 1.6em;
     font-family: '华文行楷_G';
-    font-weight:normal;
 }
 
-#a_publish>h3>a>i{
+div#a_publish>a{
     color: grey;
     text-decoration: none;
-    font-size: 1em;
-    font-weight:normal;
+    font-size: 1.2em;
 }
