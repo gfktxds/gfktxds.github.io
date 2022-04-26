@@ -64,17 +64,24 @@ div#fold_list i a{
     text-decoration:none;
 }
 
+div.hgrey_alink>a{
+    color:grey;
+    text-decoration:none;
+    font-family: 'NRM',方正卡通;
+}
+
+
 div.grey_alink>a{
     color:grey;
     text-decoration:none;
-    font-family: '英文斜体', 华文行楷_G;
+    font-family: 'NRM';
 }
 
 
 nobr.fold-title{
     color: grey;
-    font-size: 1.6em;
-    font-family: '华文行楷_G';
+    font-size: 1.7em;
+    font-family: 'NRM';
 }
 
 div#a_publish>a{
