@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="static/plugin/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="static/plugin/jquery.fancybox-2.1.5/source/jquery.fancybox.css">
     <link rel="stylesheet" href="static/css/font_styles.css">
+    <script  src="static/js/index.js"></script>
 <!--看板娘js和css引入-->
     <link href="live2D/Live2D.css" rel="stylesheet" type="text/css >
     <script  src="live2D/L2Dwidget.0.min.js"></script>
@@ -53,6 +54,7 @@
         document.getElementById("i_eyes_slash_home").style.display = "inline";
         }
     }
+
     </script>
     
 <base target="_blank">
@@ -92,7 +94,10 @@
                                 <div class="author-info__description">梧桐叶上，点点露珠零</div>
                             </div>
                             <div class="card-info-social-icons is-center">
-                                 <a class="social-icon" href="another/step.html" style="text-decoration:none;">
+                                 <div class="social-icon" id="home-a" style="text-decoration:none;">
+                                    <i class="fa fa-home"></i>
+                                </div>
+                                 <a class="social-icon" id="home-b" href="another/step.html" style="text-decoration:none;display:none">
                                     <i class="fa fa-home"></i>
                                 </a>
                             </div>
@@ -323,7 +328,7 @@
         </main>
         <footer id="footer">
             <div id="footer-wrap">
-                <div class="copyright">©燕过无痕，雪落沉渊</div>
+                <div class="copyright" onclick="home_ab(this)">©燕过无痕，雪落沉渊</div>
             </div>
         </footer>
     </div>
