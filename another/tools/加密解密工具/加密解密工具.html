@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<title>加密解密工具</title>
+
+<link href="static/bootstrap.min.css" rel="stylesheet">
+<link href="static/layer.min.css" rel="stylesheet">
+<link href="static/global.css" rel="stylesheet" type="text/css">
+<script src="static/push.js"></script><script src="static/jquery.min.js"></script>
+<script src="static/bootstrap.min.js"></script>
+<script src="static/global.js"></script>
+<script src="static/clipboard.min.js"></script>
+<!--[if lt IE 9]>
+  <script src="/static/js/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="static/layer.css" id="layuicss-skinlayercss">
+
+<body>
+  <h1><div style="font-size:3em; text-align:center;">加密解密工具</div></h1>
+  <hr>
+<div class="aw-container-wrap">
+<div class="container">
+<div class="row">
+<div class="aw-content-wrap clearfix">
+<div class=" aw-main-content">
+
+<script>var showaban =true;var storageKey ="newtools20180824";if (window.localStorage.getItem(storageKey) ==null) {$("#convertTools").after('<span class="newFeatureTip">●</span>')
+}</script>
+
+<script type="text/javascript" src="static/core-min.js"></script>
+<script type="text/javascript" src="static/aes.js"></script>
+<script type="text/javascript" src="static/tripledes.js"></script>
+<script type="text/javascript" src="static/rabbit.js"></script>
+<script type="text/javascript" src="static/rc4.js"></script>
+
+<div class="panel panel-default">
+<div class="panel-heading">
+<div class="media">
+<div class="panel-body">
+<div>
+<textarea id="content" name="RawJson" class="json_input" rows="8" style="width: 100%;" spellcheck="false" placeholder="请输入需要对称加密的字符串"></textarea>
+</div>
+<div class="row"></div>
+<div>
+<div class="btn-group" role="group" style="float: left;">
+<button id="sels" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+AES<span class="caret"></span>
+</button>
+<ul class="dropdown-menu">
+<li><a href="javascript:;" onclick="enc(&#39;aes&#39;,this)">AES</a></li>
+<li><a href="javascript:;" onclick="enc(&#39;des&#39;,this)">DES</a></li>
+<li><a href="javascript:;" onclick="enc(&#39;rc4&#39;,this)">RC4</a></li>
+<li><a href="javascript:;" onclick="enc(&#39;rabbit&#39;,this)">Rabbit</a></li>
+<li><a href="javascript:;" onclick="enc(&#39;tripledes&#39;,this)">TripleDes</a></li>
+</ul>
+</div>
+<input type="text" style="float: left; width:326px;margin-left:10px" class="form-control" id="pwd" placeholder="请输入秘钥" aria-describedby="sizing-addon3">
+<div class="left" style="float:left;margin-left:10px">
+<div class="btn-group" role="group" aria-label="...">
+<button name="validate" id="btnEnc" onclick="encrypt()" value="Validate" class="btn btn-primary">加密</button>
+<button name="validate" id="validate" onclick="decrypt()" value="Validate" class="btn btn-primary">解密</button>
+<input name="validate" class="btn btn-danger" onclick="Empty(); " type="reset" value="清空">
+</div>
+</div>
+<input type="hidden" id="enctype" value="aes">
+</div>
+<div class="row"></div>
+<div style="margin-top: 10px;">
+<textarea id="result" name="RawJson" class="json_input" rows="8" style="width: 100%;" spellcheck="false" placeholder="加密或解密后的密文"></textarea>
+</div>
+</div>
+<input type="hidden" id="encode" value="1">
+<div class="panel-footer"></div>
+</div>
+
+
+<script type="text/javascript">function enc(s,obj){$("#enctype").val(s);$("#sels").text($(obj).text());}
+function encrypt(){switch($("#enctype").val()){case "aes":$("#result").val(CryptoJS.AES.encrypt($("#content").val(),$("#pwd").val()));break;case "des":$("#result").val(CryptoJS.DES.encrypt($("#content").val(),$("#pwd").val()));break;case "rabbit":$("#result").val(CryptoJS.Rabbit.encrypt($("#content").val(),$("#pwd").val()));break;case "rc4":$("#result").val(CryptoJS.RC4.encrypt($("#content").val(),$("#pwd").val()));break;case "tripledes":$("#result").val(CryptoJS.TripleDES.encrypt($("#content").val(),$("#pwd").val()));break;}
+}
+function decrypt(){switch($("#enctype").val()){case "aes":$("#result").val(CryptoJS.AES.decrypt($("#content").val(),$("#pwd").val()).toString(CryptoJS.enc.Utf8));break;case "des":$("#result").val(CryptoJS.DES.decrypt($("#content").val(),$("#pwd").val()).toString(CryptoJS.enc.Utf8));break;case "rabbit":$("#result").val(CryptoJS.Rabbit.decrypt($("#content").val(),$("#pwd").val()).toString(CryptoJS.enc.Utf8));break;case "rc4":$("#result").val(CryptoJS.RC4.decrypt($("#content").val(),$("#pwd").val()).toString(CryptoJS.enc.Utf8));break;case "tripledes":$("#result").val(CryptoJS.TripleDES.decrypt($("#content").val(),$("#pwd").val()).toString(CryptoJS.enc.Utf8));break;}
+}
+function Empty() {document.getElementById('content').value ='';document.getElementById('result').value ='';document.getElementById('content').select();}
+function GetFocus() {document.getElementById('content').focus();}
+</script>
+
+<script src="static/layer.min.js"></script>
+</div></div></div></div></div>
+<script src="static/common.js"></script><div class="modal fade" id="mod" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"><div class="modal-dialog" role="document" style="width: 96%;"><div class="modal-content"><div class="modal-header">
+
+</div></div></div></div>
+<div style="display:none;">
+<span id="cnzz_stat_icon_1259236301"></span><script src="static/stat.php" type="text/javascript"></script></div>
+
+<div id="webTrans2204919442"><div id="wordTrans2204919442" class="wordTrans2204919442" style="display: none; left: 537px; top: 70px;"><div class="wordTransIcon2204919442"></div></div></div></body></html>
