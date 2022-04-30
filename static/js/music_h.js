@@ -14,14 +14,14 @@ const ap = new APlayer({
         {
             name: '错位时空',
             artist: '艾辰',
-            url: 'https://hub.fastgit.xyz/gfktxdspeach/music_storage/raw/main/music/%E9%94%99%E4%BD%8D%E6%97%B6%E7%A9%BA-%E8%89%BE%E8%BE%B0/%E9%94%99%E4%BD%8D%E6%97%B6%E7%A9%BA-%E8%89%BE%E8%BE%B0.mp3',
-            cover: 'https://hub.fastgit.xyz/gfktxdspeach/music_storage/raw/main/music/%E9%94%99%E4%BD%8D%E6%97%B6%E7%A9%BA-%E8%89%BE%E8%BE%B0/src%3Dhttp___inews.gtimg.com_newsapp_bt_0_13290766403_1000.jpg%26refer%3Dhttp___inews.gtimg.webp',
+            url: 'https://www.ytmp3.cn/down/74706.mp3',
+            cover: 'https://img0.baidu.com/it/u=53043569,1589246528&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=800',
         },
         {
             name: '错位时空',
             artist: '韩可可',
-            url: 'https://hub.fastgit.xyz/gfktxdspeach/music_storage/raw/main/music/%E9%94%99%E4%BD%8D%E6%97%B6%E7%A9%BA-%E9%9F%A9%E5%8F%AF%E5%8F%AF/%E9%94%99%E4%BD%8D%E6%97%B6%E7%A9%BA-%E9%9F%A9%E5%8F%AF%E5%8F%AF.mp3',
-            cover: 'https://hub.fastgit.xyz/gfktxdspeach/music_storage/raw/main/music/%E9%94%99%E4%BD%8D%E6%97%B6%E7%A9%BA-%E9%9F%A9%E5%8F%AF%E5%8F%AF/u%3D363436123%2C3922921805%26fm%3D253%26fmt%3Dauto%26app%3D138%26f%3DPNG.webp',
+            url: 'https://webfs.cloud.kugou.com/202204301840/2ebe95ab489f4449e48d2a2b3d740bd1/part/0/960547/KGTX/CLTX001/1d378da2268cf5f45b7ec029620489af.mp3',
+            cover: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi1.hdslb.com%2Fbfs%2Farchive%2F19844ff6f7eeac4c384f4146caa93719c6d284c3.png&refer=http%3A%2F%2Fi1.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1653907338&t=37f3bc595a835692510260875aad1924',
         }
     ]
 });
