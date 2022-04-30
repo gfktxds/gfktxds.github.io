@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="static/plugin/jquery.fancybox-2.1.5/source/jquery.fancybox.css">
     <link rel="stylesheet" href="static/css/font_styles.css">
     <script  src="static/js/index.js"></script>
+
+    <!-- require APlayer -->
+    <link rel="stylesheet" href="static/plugin/aplayer-1.10.1/dist/APlayer.min.css">
+
 <!--看板娘js和css引入-->
     <link href="live2D/Live2D.css" rel="stylesheet" type="text/css >
     <script  src="live2D/L2Dwidget.0.min.js"></script>
@@ -147,7 +151,7 @@
                                <i class="fa fa-bed" aria-hidden="true"><a href="#ia_res" target="_self">&nbsp;闲暇之余</a></i><br>
                                <i class="fa fa-plane" aria-hidden="true"><a href="#ia_ice" target="_self">&nbsp;破冰世界</a></i><br>
                                <i class="fa fa-tag" aria-hidden="true"><a href="#ia_col" target="_self">&nbsp;收藏</a></i><br>
-			       <i class="fa fa-wrench" aria-hidden="true"><a href="#ia_too" target="_self">&nbsp;特殊工具</a></i><br>
+                               <i class="fa fa-wrench" aria-hidden="true"><a href="#ia_too" target="_self">&nbsp;特殊工具</a></i><br>
                             </div>
                         </div>
                     </div>
@@ -159,9 +163,21 @@
                 </div>
                 <article id="page">
                     <div class="article-container">
-                        <h2 class="purplebows">音乐</h2>
-                        <meting-js auto="https://y.qq.com/n/ryqq/playlist/8444199365.html">
-                        </meting-js>
+                        <h2 class="purplebows">音乐
+                            <a class="social-icon" onclick="mus_change(this)" style="text-decoration:none;">
+                            <i id="mus_heart" class="fa fa-heart" style="font-size:15px"></i>
+                            <i id="mus_heartbeat" class="fa fa-heartbeat" style="font-size:15px; display: none;"></i></a>
+                        </h2>
+                          <div id="music_li">
+                            <meting-js auto="https://y.qq.com/n/ryqq/playlist/8444199365.html">
+                            </meting-js>
+                          </div>
+                          <div id="music_self" style="display:none;">
+                            <div id="aplayer01"></div>
+                          </div>
+                          <!--Aplayer-->
+                          <script src="static/plugin/aplayer-1.10.1/dist/APlayer.min.js"></script>
+                          <script src="static/js/music_h.js"></script>
 
                         <hr>
                         <h2 >
@@ -220,7 +236,8 @@
                         <div class="tool">
                                <div class="hgrey_alink" style="FONT-SIZE: 20pt; ">
                                     <a href="https://lvyueyang.github.io/web-music/app/">周杰伦歌单&nbsp;</a>
-                                    <a href="https://rainymood.com/">下雨声&nbsp;</a>											
+                                    <a href="https://rainymood.com/">下雨声&nbsp;</a>
+                                    
                                </div>
                         </div>
 
@@ -309,8 +326,8 @@
                                     <a href="https://www.thinkcmf.com/font/font_awesome/icons.html">font awesome图标代码大全&nbsp;</a> 
                                     <a href="https://www.dafont.com/">国外字体下载&nbsp;</a> 
                                     <a href="https://www.uupoop.com/#/">在线PS&nbsp;</a> 
-		                    <a href="https://dns.wdvip.icu/home">免费域名</a><a href="https://space.bilibili.com/353379484">---征途wd&nbsp;</a>
-				    <a href="http://www.noti.top/2021/05/19/tooltip/">轻量级工具分享</a><a href="https://space.bilibili.com/477540505?spm_id_from=333.788.b_765f7570696e666f.2">---携手看星云&nbsp;</a> 
+                                    <a href="https://dns.wdvip.icu/home">免费域名</a><a href="https://space.bilibili.com/353379484">---征途wd&nbsp;</a> 
+                                    <a href="http://www.noti.top/2021/05/19/tooltip/">轻量级工具分享</a><a href="https://space.bilibili.com/477540505?spm_id_from=333.788.b_765f7570696e666f.2">---携手看星云&nbsp;</a> 
                                </div>
                         </div>
 
@@ -348,10 +365,6 @@
 
     <script src="static/js/instantpage.js" type="module"></script>
 
-    <!-- aplayer、meting -->
-    <!-- require APlayer -->
-    <link rel="stylesheet" href="static/plugin/aplayer-1.10.1/dist/APlayer.min.css">
-    <script src="static/plugin/aplayer-1.10.1/dist/APlayer.min.js"></script>
     <!-- require MetingJS -->
     <script src="static/plugin/meting-2.0.1/dist/Meting.min.js"></script>
 
