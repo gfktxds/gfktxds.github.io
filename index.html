@@ -56,28 +56,28 @@
         if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
             alert('朋友，上古浏览器不支持呢~');
         }
-        <!--目录页全展开/隐藏,可实现多级目录-->
-    function judgefold_home(id){
-        if(document.getElementById("judge_fold_home").checked == true){
-            document.getElementById(id).style.display="none";
-            document.getElementById("judge_fold_home").checked = false;
-            
-        }else{
-            document.getElementById(id).style.display="block";
-            document.getElementById("judge_fold_home").checked = true;
+
+        //单目录页展开/隐藏
+        function one_fold(id){
+	        if (document.getElementById(id).style.display=="none"){
+	            document.getElementById(id).style.display="block";
+		    }else{
+	 	        document.getElementById(id).style.display="none";
+	    	}
+        eye_icon_judege(id);
         }
-    }
-    function allfolding_home(){
-        judgefold_home('fold_list');
-        <!--有多个的时候，从第二个开始，请连续写两次judgefold_home方法-->
-        if(document.getElementById("judge_fold_home").checked == true){
-        document.getElementById("i_eyes_home").style.display="inline";
-        document.getElementById("i_eyes_slash_home").style.display = "none";
-        }else{
-        document.getElementById("i_eyes_home").style.display="none";
-        document.getElementById("i_eyes_slash_home").style.display = "inline";
+
+        function eye_icon_judege(id){
+            if(document.getElementById(id).style.display=="none"){
+               document.getElementById("i_eyes_home").style.display="none";
+               document.getElementById("i_eyes_slash_home").style.display = "inline";
+            }else{
+               document.getElementById("i_eyes_home").style.display="inline";
+               document.getElementById("i_eyes_slash_home").style.display = "none";
+            }
         }
-    }
+
+
 
     </script>
     
@@ -156,9 +156,13 @@
                                 <i class="fa fa-line-chart" aria-hidden="true"></i>
                                 <span>站点信息</span>
                             </div>
-                                 <span id="busuanzi_container_site_pv">
-                                  本站总访问量：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="busuanzi_value_site_pv"></span>次
-                                 </span>
+                            <div class="webinfo">
+                                <div class="webinfo-item">
+                                    <span id="busuanzi_container_site_pv">
+                                        本站总访问量：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="busuanzi_value_site_pv"></span>次
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="card-widget card-announcement">
@@ -166,8 +170,7 @@
                             <div class="item-headline">
                                 <i class="fa fa-list" aria-hidden="true"></i>
                                 <span>目录
-                                  <input id="judge_fold_home" type="checkbox" hidden="hidden" checked="checked">
-                                  <a class="social-icon" onclick="allfolding_home(this)" style="text-decoration:none;">
+                                  <a class="social-icon" onclick="one_fold('fold_list')" style="text-decoration:none;">
                                   <i id="i_eyes_home" class="fa fa-eye"></i>
                                   <i id="i_eyes_slash_home"class="fa fa-eye-slash" style="display:none;"></i>
                                   </a>
@@ -363,8 +366,7 @@
                         <h2 id="ia_col" class="purplebows">收藏</h2>
                         <div class="tool">
                                <div class="hgrey_alink" style="FONT-SIZE: 20pt;">
-                                    <a href="https://www.thinkcmf.com/font/font_awesome/icons.html">font awesome图标代码大全&nbsp;</a>
-				    <a href=" https://busuanzi.ibruce.info/">不蒜子访客计数&nbsp;</a>
+                                    <a href="https://www.thinkcmf.com/font/font_awesome/icons.html">font awesome图标代码大全&nbsp;</a> 
                                     <a href="https://www.dafont.com/">国外字体下载&nbsp;</a> 
                                     <a href="https://www.uupoop.com/#/">在线PS&nbsp;</a> 
                                     <a href="https://dns.wdvip.icu/home">免费域名</a><a href="https://space.bilibili.com/353379484">---征途wd&nbsp;</a> 
@@ -402,7 +404,7 @@
         </footer>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.0/lazysizes.min.js" async></script>
+
     <script src="static/plugin/jquery.min.js-3.5.1/jquery.min.js"></script>
     <script src="static/plugin/jquery.fancybox-2.1.5/source/jquery.fancybox.js"></script>
     <script src="static/js/instantpage.js" type="module"></script>
