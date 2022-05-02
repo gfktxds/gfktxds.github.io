@@ -1,5 +1,5 @@
-const ap = new APlayer({
-    container: document.getElementById('aplayer01'),
+const ap_self = new APlayer({
+    container: document.getElementById('m_self'),
     mini: false,
     autoplay: false,
     theme: '#FADFA3',
@@ -46,12 +46,63 @@ const ap = new APlayer({
             url: 'https://iayay.com/yun/music/gfktxds/%E7%BA%B8%E7%9F%AD%E6%83%85%E9%95%BF---%E8%8A%B1%E7%B2%A5.mp3',
             cover: 'https://img2.baidu.com/it/u=964760556,967820495&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500',
             lrc:'[00:11.26]你陪我步入蝉夏\n[00:13.88]越过城市喧嚣\n[00:16.56]歌声还在游走\n[00:19.52]你榴花般的双眸\n[00:22.29]不见你的温柔\n[00:24.94]丢失花间欢笑\n[00:27.82]岁月无法停留\n[00:31.23]流云的等候\n[00:34.32]我真的好想你\n[00:36.53]在每一个雨季\n[00:38.74]你选择遗忘的\n[00:41.14]是我最不舍的\n[00:43.65]纸短情长啊\n[00:46.13]道不尽太多涟漪\n[00:49.20]我的故事都是关于你呀\n[00:53.55]怎么会爱上了他\n[00:55.48]并决定跟他回家\n[00:58.30]放弃了我的所有\n[01:00.69]我的一切无所谓\n[01:03.47]纸短情长啊\n[01:04.87]诉不完当时年少\n[01:08.73]我的故事还是关于你呀\n[01:33.16]你陪我步入蝉夏\n[01:35.53]越过城市喧嚣\n[01:38.01]歌声还在游走\n[01:40.17]你榴花般的双眸\n[01:42.62]不见你的温柔\n[01:44.86]丢失花间欢笑\n[01:47.12]岁月无法停留\n[01:50.11]流云的等候\n[01:52.18]我真的好想你\n[01:54.88]在每一个雨季\n[01:57.41]你选择遗忘的\n[01:59.72]是我最不舍的\n[02:01.92]纸短情长啊\n[02:04.25]道不尽太多涟漪\n[02:07.41]我的故事都是关于你呀\n[02:11.83]怎么会爱上了他\n[02:13.87]并决定跟他回家\n[02:16.15]放弃了我的所有\n[02:18.29]我的一切无所谓\n[02:20.93]纸短情长啊\n[02:23.32]诉不完当时年少\n[02:26.28]我的故事还是关于你呀\n[02:41.53]你陪我步入蝉夏\n[02:44.18]越过城市喧嚣\n[02:46.83]歌声还在游走\n[02:49.61]你榴花般的双眸\n[02:52.05]不见你的温柔\n[02:54.78]丢失花间欢笑\n[02:57.75]岁月无法停留\n[03:00.91]流云的等候'
+        },
+        {
+            name: '我的天空',
+            artist: '南征北战NZBZ',
+            url: 'https://www.ytmp3.cn/down/77028.mp3',
+            cover: 'https://img1.baidu.com/it/u=1973539770,3586965967&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500',
+            lrc:'[00:00.51]南征北战NZBZ - 我的天空\n[00:01.32]作词：醉人赵辰龙\n[00:01.52]作曲：汀洋\n[00:02.33]企划：王烨扬\n[00:03.29]发行人：桑爱\n[00:21.66]再见我的爱\n[00:22.72]I Wanna Say Goodbye\n[00:24.20]再见我的过去\n[00:25.62]I Want a New Life\n[00:26.93]再见我的眼泪跌倒和失败\n[00:29.72]再见那个年少轻狂的时代\n[00:32.60]再见我的烦恼不再孤单\n[00:35.18]再见我的懦弱不再哭喊\n[00:37.79]Now I wanna say hello hello\n[00:40.46]我的未来hello hello\n[00:43.73]在无尽的黑夜\n[00:46.21]所有都快要毁灭\n[00:48.98]至少我还有梦\n[00:51.41]也为你而感动\n[00:54.21]原来黎明的起点\n[00:57.14]就在我的心里面\n[00:59.88]只要我还有梦\n[01:02.35]就会看到彩虹\n[01:05.62]在我的天空\n[01:10.58]Yeah\n[01:12.32]挫折和离别不过是\n[01:13.45]生命中的点缀\n[01:14.81]过了多年我才读懂了\n[01:16.23]家人的眼泪\n[01:17.66]发现原来自己没有说\n[01:19.34]再见的勇气\n[01:20.35]离别的伤感感染了\n[01:21.81]满城的空气\n[01:22.93]失去后才知道那些\n[01:24.30]有多么的珍贵\n[01:25.76]亲爱的朋友们是否\n[01:27.13]已经展翅纷飞\n[01:28.45]不飞到高处怎么开阔\n[01:29.96]自己的视野\n[01:31.23]你已经长大了\n[01:32.60]快告诉全世界\n[01:33.96]外面的世界散发着\n[01:35.59]强大的磁场\n[01:36.70]诱惑着每一双即将\n[01:38.37]展开的翅膀\n[01:39.48]热恋的火在懵懂中\n[01:41.10]凶猛地燃烧\n[01:42.21]美丽的火花在恋人的\n[01:44.03]周围环绕\n[01:45.27]这过程很美\n[01:46.23]尽管有无奈和失落\n[01:47.75]刻骨铭心地爱过\n[01:48.91]尽管她爱的并不是我\n[01:51.06]如果没有离别如何\n[01:52.32]学会承受打击\n[01:53.49]如果没有跌倒如何\n[01:54.80]能够学会爬起\n[01:56.07]在无尽的黑夜\n[01:57.94]所有都快要毁灭\n[02:00.52]至少我还有梦\n[02:03.10]也为你而感动\n[02:05.93]原来黎明的起点\n[02:08.92]就在我的心里面\n[02:11.54]只要我还有梦\n[02:14.12]就会看到彩虹\n[02:17.13]在我的天空\n[02:29.59]hello hello是谁在为我等待\n[02:32.48]hello hello在那神秘的未来\n[02:35.03]hello hello找到属于我的爱\n[02:37.71]hello hello This is my new life\n[02:41.67]是谁在为我等待\n[02:44.19]在那神秘的未来\n[02:46.97]找到属于我的爱\n[02:50.66]在无尽的黑夜\n[02:52.99]所有都快要毁灭\n[02:55.72]至少我还有梦\n[02:58.20]也为你而感动\n[03:01.14]原来黎明的起点\n[03:04.12]就在我的心里面\n[03:06.82]只要我还有梦\n[03:09.14]就会看到彩虹\n[03:12.55]在无尽的黑夜\n[03:15.14]所有都快要毁灭\n[03:17.94]至少我还有梦\n[03:20.31]也为你而感动\n[03:23.20]原来黎明的起点\n[03:26.18]就在我的心里面\n[03:28.91]只要我还有梦\n[03:31.44]就会看到彩虹\n[03:34.43]在我的天空'
         }
-
         
     ]
+    
 });
 
+const ap_pure = new APlayer({
+    container: document.getElementById('m_pure'),
+    mini: false,
+    autoplay: false,
+    theme: '#FADFA3',
+    loop: 'all',
+    order: 'random',
+    preload: 'auto',
+    volume: 0.7,
+    mutex: true,
+    listFolded: false,
+    listMaxHeight: 90,
+    lrcType: 1,
+    audio: [
+        {    
+            name: '城南花已开',
+            artist: '三亩地',
+            url: 'https://www.ytmp3.cn/down/47675.mp3',
+            cover: 'https://img2.baidu.com/it/u=598781917,2411767849&fm=253&fmt=auto&app=138&f=JPEG?w=789&h=500',
+            lrc:'[00:00.51]城南花已开\n[00:03.00]愿君永长在\n[00:07.00]虽未曾逢君\n[00:10.00]却与君相惜\n[00:14.00]望岁岁今朝\n[00:17.00]愿年年花开\n[00:20.00]介时花未尽\n[00:25.00]与君望城南\n[00:30.00]待君归来时\n[00:34.00]花开城南外'
+        },
+        {
+            name: '所念皆星河',
+            artist: 'CMJ',
+            url: 'https://www.ytmp3.cn/down/74714.mp3',
+            cover: 'https://img0.baidu.com/it/u=2215456526,759918534&fm=253&fmt=auto&app=120&f=JPEG?w=300&h=200',
+            lrc:'[00:00.00]星河皆是你'
+        },
+        {
+            name: 'Asphyxia',
+            artist: '逆时针向',
+            url: 'https://www.ytmp3.cn/down/77029.mp3',
+            cover: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi2.hdslb.com%2Fbfs%2Farchive%2F7133537a7daebca5616ebbb7fbb94365112f0ba3.png&refer=http%3A%2F%2Fi2.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1654070732&t=2332d9b314e89a9ac4a16c21ebc395bf',
+            lrc:'[00:00.00]Asphyxia-逆时针向'
+        }
+    ]
+    
+});
+
+
+
+
+
+/*
 function mus_change(){
     if(document.getElementById('music_self').style.display=="none"){
         document.getElementById('music_li').style.display="none"
@@ -63,5 +114,31 @@ function mus_change(){
         document.getElementById('music_self').style.display="none"
         document.getElementById('mus_heartbeat').style.display="none"
         document.getElementById('mus_heart').style.display="inline"
+    }
+}
+*/
+
+
+function mus_change(){
+    if(document.getElementById('music_li').style.display=="none"){
+        if(document.getElementById('music_pure').style.display=="none"){
+           document.getElementById('music_self').style.display="none";
+           document.getElementById('music_pure').style.display="block";
+
+           document.getElementById('mus_self').style.display="none";
+           document.getElementById('mus_pure').style.display="inline";
+        }else{
+           document.getElementById('music_li').style.display="block";
+           document.getElementById('music_pure').style.display="none";
+
+           document.getElementById('mus_li').style.display="inline";
+           document.getElementById('mus_pure').style.display="none";
+        }
+    }else{
+        document.getElementById('music_li').style.display="none";
+        document.getElementById('music_self').style.display="block";
+
+        document.getElementById('mus_li').style.display="none";
+        document.getElementById('mus_self').style.display="inline";
     }
 }
