@@ -19,8 +19,18 @@
     <!--看板娘js和css引入-->
     <link href="live2D/Live2D.css" rel="stylesheet" type="text/css >
     <script  src="live2D/L2Dwidget.0.min.js"></script>
-    <script  src="live2D/L2Dwidget.min.js"></script>
+    <script  src="live2D/L2Dwidget.min.js"></script> 
 
+    <!--距今时间插件调用-->
+    <script src="static/plugin/clock-time/jquery.min.js"></script>
+    <script type="text/javascript" src="static/plugin/clock-time/jscex.min.js"></script>
+    <script type="text/javascript" src="static/plugin/clock-time/jscex-parser.js"></script>
+    <script type="text/javascript" src="static/plugin/clock-time/jscex-jit.js"></script>
+    <script type="text/javascript" src="static/plugin/clock-time/jscex-builderbase.min.js"></script>
+    <script type="text/javascript" src="static/plugin/clock-time/jscex-async.min.js"></script>
+    <script type="text/javascript" src="static/plugin/clock-time/jscex-async-powerpack.min.js"></script>
+    <script type="text/javascript" src="static/plugin/clock-time/functions.js" charset="utf-8"></script>
+    <script type="text/javascript" src="static/plugin/clock-time/time.js" charset="utf-8"></script>
     <!--字体引入-->
     <style>
     @font-face{
@@ -127,6 +137,19 @@
                                 <span>今日诗词</span>
                             </div>
                             <div id="jinrishici-sentence"></div>
+                        </div>
+                    </div>
+
+                    <div class="card-widget card-announcement">
+                        <div class="card-content">
+                            <div class="item-headline">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                <span>曾几何时</span>
+                            </div>
+                            <div id="clock-box">
+                               <div id="clock"></div>
+                               <span>（唯</span><font color="#33CC00">时光</font><span>和</span><font color="#66FFFF">雪</font><span>不可辜负）</span>
+                            </div>
                         </div>
                     </div>
 
