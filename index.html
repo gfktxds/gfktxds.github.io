@@ -74,6 +74,7 @@
     
 <base target="_blank">
 </head>
+
 <body onload="parent.location='#body-wrap'">
     <div id="body-wrap">
         <nav class="not_index_bg" id="nav" style="background-image:url(https://api.ixiaowai.cn/api/api.php)">
@@ -164,19 +165,8 @@
                                 </span>
                             </div>
                             <div id="fold_list">
-                               <i class="fa fa-star-o" aria-hidden="true"><a href="#ia_index">&nbsp;导航</a></i><br>
-                               <i class="fa fa-search" aria-hidden="true"><a href="#ia_search" target="_self">&nbsp;搜索引擎</a></i><br>
-                               <i class="fa fa-film" aria-hidden="true"><a href="#ia_film" target="_self">&nbsp;追番</a></i><br>
-                               <i class="fa fa-play-circle-o" aria-hidden="true"><a href="#ia_vid" target="_self">&nbsp;视频</a></i><br>
-                               <i class="fa fa-music" aria-hidden="true"><a href="#ia_mus" target="_self">&nbsp;音乐</a></i><br>
-                               <i class="fa fa-graduation-cap" aria-hidden="true"><a href="#ia_document" target="_self">&nbsp;科研工具</a></i><br>
-                               <i class="fa fa-pencil" aria-hidden="true"><a href="#ia_tran" target="_self">&nbsp;翻译</a></i><br>
-                               <i class="fa fa-book" aria-hidden="true"><a href="#ia_stu" target="_self">&nbsp;学习助手</a></i><br>
-                               <i class="fa fa-download" aria-hidden="true"><a href="#ia_dow" target="_self">&nbsp;下载工具</a></i><br>
-                               <i class="fa fa-bed" aria-hidden="true"><a href="#ia_res" target="_self">&nbsp;闲暇之余</a></i><br>
-                               <i class="fa fa-plane" aria-hidden="true"><a href="#ia_ice" target="_self">&nbsp;破冰世界</a></i><br>
-                               <i class="fa fa-tag" aria-hidden="true"><a href="#ia_col" target="_self">&nbsp;收藏</a></i><br>
-                               <i class="fa fa-wrench" aria-hidden="true"><a href="#ia_too" target="_self">&nbsp;特殊工具</a></i><br>
+                               <i class="fa fa-music" aria-hidden="true"><a href="#ia_musi" target="_self">&nbsp;音乐</a></i><br>
+                               <i class="fa fa-star-o" aria-hidden="true"><a href="#ia_indexi">&nbsp;导航</a></i><br>
                             </div>
                         </div>
                     </div>
@@ -188,7 +178,7 @@
                 </div>
                 <article id="page">
                     <div class="article-container">
-                        <h2 class="purplebows">音乐
+                        <h2 class="purplebows" id="ia_musi">音乐
                             <a class="social-icon" onclick="mus_change(this)" style="text-decoration:none;">
                             <i id="mus_li" class="fa fa-heart" style="font-size:15px;"></i>
                             <i id="mus_self" class="fa fa-heartbeat" style="font-size:15px; display: none;"></i>
@@ -214,185 +204,8 @@
                         </h2>
                         <div class="tool">
                                <div class="hgrey_alink" style="FONT-SIZE: 20pt; ">
-                                    <a href="https://adzhp.cn/">爱达杂货铺&nbsp;</a>
-                                    <a href="https://webjike.com/">小呆导航&nbsp;</a>
-                                    <a href="https://xininn.surge.sh/">馨客栈&nbsp;</a>
-                                    <a href="https://webstack.cc/cn/index.html">设计师网址导航&nbsp;</a>
-                                    <a href="http://tooool.org/">程序员导航&nbsp;</a> 
-                                    <a href="https://nav.geekape.net/">极客猿梦导航&nbsp;</a> 
-                                    <a href="http://www.hippter.com/">PPT模板网站导航&nbsp;</a> 
-                                    <a href="http://www.esjson.com/">ESJON在线工具&nbsp;</a> 
-                                    
+                                    <a href="another/index.html">个人导航&nbsp;</a>
                                </div>
-                        </div>
-
-                        <hr>
-                        <h2 >
-                           <div id="ia_search" class="purplebows">
-                         搜索引擎
-                        </h2>
-                        <div class="tool">
-                               <div class="hgrey_alink" style="FONT-SIZE: 20pt; ">
-                                    <a href="http://www.baidu.com/">百度&nbsp;</a>
-                                    <a href="https://cn.bing.com/">必应&nbsp;</a> 
-                                    <a href="https://www.google.com.hk/webhp?hl=zh-CN&sourceid=cnhp&gws_rd=ssl">谷歌&nbsp;</a> 
-                               </div>
-                        </div>
-
-
-                        <hr>
-                        <h2 id="ia_film" class="purplebows">追番</h2>
-                        <div class="tool">
-                               <div class="hgrey_alink" style="FONT-SIZE: 20pt; ">
-                                    <a href="https://www.bilibili.com/">哔哩哔哩&nbsp;</a>
-                                    <a href="https://omofun.tv/">OmoFun动漫视频网&nbsp;</a>
-                                    <a href="https://www.sakuradm.tv/?ivk_sa=1025922x">樱花动漫&nbsp;</a>
-
-                               </div>
-                        </div>
-
-                        <hr>
-                        <h2 id="ia_vid" class="purplebows">视频</h2>
-                        <div class="tool">
-                               <div class="hgrey_alink" style="FONT-SIZE: 20pt; ">
-                                    <a href="https://www.douyin.com/">抖音网页版&nbsp;</a>
-                                    <a href="https://www.youku.com/">优酷&nbsp;</a>
-                                    <a href="https://www.iqiyi.com/">爱奇艺&nbsp;</a>
-                                    <a href="https://v.qq.com/">腾讯视频&nbsp;</a>
-                               </div>
-                        </div>
-
-                        <hr>
-                        <h2 id="ia_mus" class="purplebows">音乐</h2>
-                        <div class="tool">
-                               <div class="hgrey_alink" style="FONT-SIZE: 20pt; ">
-                                    <a href="https://lvyueyang.github.io/web-music/app/">周杰伦歌单&nbsp;</a>
-                                    <a href="https://rainymood.com/">下雨声&nbsp;</a><br>
-                                    <a href="https://kuaikan.ink/music/">电音music&nbsp;</a><br>
-                                    <div style="color:grey;font-family: 方正卡通;">▲音乐外链和歌词：</div>
-                                    <a href="https://iayay.com/">哎呀呀音乐★&nbsp;</a>
-                                    <a href="https://pan.bilnn.cn/">比邻云&nbsp;</a>
-                                    <a href="https://yunpanpan.cn/">情韵外链网盘&nbsp;</a>
-                                    <a href="https://pan.youmengpay.com/">彩虹外链网盘&nbsp;</a>
-                                    <a href="https://pan.fgboke.com/upload.php">峰哥外链网盘&nbsp;</a>
-                                    <a href="http://y.xy47.top/upload.php">星隐外链网盘&nbsp;</a>
-                                    <a href="https://pan.losfer.cn/">LOSFER外链网盘&nbsp;</a>
-                                    
-                                    <a href="http://zuoye.free.fr/">豆子外链&nbsp;</a>
-                                    <a href="https://www.ytmp3.cn/">扬天音乐&nbsp;</a>
-
-                                    <a href="http://song.oeecc.com/">天籁村音乐网&nbsp;</a>
-                                    <a href="https://music.gimhoy.com/">Gimhoy音乐盘&nbsp;</a>
-                                    
-                                    
-                               </div>
-                        </div>
-
-
-                        <hr>
-                        <h2 id="ia_document" class="rainbows">科研工具</h2>
-                        <div class="tool">
-                               <div class="hgrey_alink" style="FONT-SIZE: 20pt; ">
-                                    <a href="https://www.cnki.net/">知网&nbsp;</a>
-                                    <a href="https://scholar.google.com/">谷歌学术&nbsp;</a>
-                                    <a href="http://scholar.scqylaw.com/">谷歌学术-镜像&nbsp;</a>
-                                    <a href="https://gfsoso.99lb.net/">谷粉学术&nbsp;</a>
-                                    <a href="https://xueshu.baidu.com/">百度学术&nbsp;</a>
-                                    <a href="https://www.drugfuture.com/cnpat/cn_patent.asp">专利下载&nbsp;</a>
-                               </div>
-                        </div>
-
-                        <hr>
-                        <h2 id="ia_tran" class="purplebows">翻译</h2>
-                        <div class="tool">
-                               <div class="hgrey_alink" style="FONT-SIZE: 20pt; ">
-                                    <a href="https://www.deepl.com/translator">DeepL翻译&nbsp;</a> 
-                                    <a href="https://translate.google.cn/">谷歌翻译&nbsp;</a> 
-                                    <a href="https://fanyi.youdao.com/">有道翻译&nbsp;</a> 
-                                    <a href="https://fanyi.baidu.com/">百度翻译&nbsp;</a> 
-                                    <a href="https://fanyi.sogou.com/text">搜狗翻译&nbsp;</a> 
-                               </div>
-                        </div>
-
-                        <hr>
-                        <h2 id="ia_stu" class="purplebows">学习助手</h2>
-                        <div class="tool">
-                               <div class="hgrey_alink" style="FONT-SIZE: 20pt;">
-                                    <a href="https://ptable.com/?lang=zh-hans#%E6%80%A7%E8%B4%A8">元素周期表&nbsp;</a> 
-                               </div>
-                        </div>
-
-
-                        <hr>
-                        <h2 id="ia_dow" class="purplebows">下载工具</h2>
-                        <div class="tool">
-                               <div class="hgrey_alink" style="FONT-SIZE: 20pt;">
-                                    <a href="http://tools.liumingye.cn/music/?page=searchPage">免费音乐下载&nbsp;</a> 
-                                    <a href="http://www.jijidown.com/">B站视频下载&nbsp;</a> <br>
-                                    <a href="https://stoppersocke00.github.io/converter/">YouTube视频下载1&nbsp;&nbsp;</a> 
-                                    <a href="https://www.y2mate.com/en227/youtube">YouTube视频下载2&nbsp;&nbsp;</a> 
-                                    <a href="https://en.savefrom.net/1-youtube-video-downloader-88/">YouTube视频下载3&nbsp;&nbsp;</a> 
-                                    <a href="https://maple3142.github.io/mergemp4/">视频音频合成&nbsp;</a> 
-                                    
-                               </div>
-                        </div>
-
-
-                        <hr>
-                        <h2 id="ia_res" class="purplebows">闲暇之余</h2>
-                        <div class="tool">
-                               <div class="hgrey_alink" style="FONT-SIZE: 20pt;">
-                                    <a href="https://www.dbbqb.com/">表情包大全&nbsp;</a>
-                                    <a href="https://louisalflame.github.io/CFantasyClick/index.html">在线修仙&nbsp;</a> 
-                                    <a href="http://emojisandearthporn.com/">找到不动的那个&nbsp;</a>
-                                    <a href="https://www.yikm.net/">找回童年的快乐&nbsp;</a> 
-                                    <a href="https://www.autopiano.cn/">自由钢琴&nbsp;</a> 
-                                    <a href="https://iamthecu.be/">在线拧魔方&nbsp;</a> 
-                                    <a href="https://nathanfriend.io/inspiral-web/">万花尺&nbsp;</a> 
-                                    <a href="http://zhangwenli.com/lipstick/">口红颜色可视化&nbsp;</a> 
-                                    <a href="https://time.is/">精准时间&nbsp;</a> 
-                                    <a href="https://www.nihaowua.com/">你好污啊&nbsp;</a> 
-                               </div>
-                        </div>
-
-
-                        <hr>
-                        <h2 id="ia_ice" class="purplebows">破冰世界</h2>
-                        <div class="tool">
-                               <div class="hgrey_alink" style="FONT-SIZE: 20pt;">
-                                    <a href="https://www.youtube.com/">YouTube&nbsp;</a>
-                                    <a href="https://twitter.com/home">Twitter&nbsp;</a>
-                                    <a href="https://github.com/">Github&nbsp;</a>
-                               </div>
-                        </div>
-
-                        <hr>
-                        <h2 id="ia_col" class="purplebows">收藏</h2>
-                        <div class="tool">
-                               <div class="hgrey_alink" style="FONT-SIZE: 20pt;">
-                                    <a href="https://www.thinkcmf.com/font/font_awesome/icons.html">font awesome图标代码大全&nbsp;</a> 
-                                    <a href="http://busuanzi.ibruce.info/">不蒜子访客计数&nbsp;</a> 
-                                    <a href="https://www.dafont.com/">国外字体下载&nbsp;</a> 
-                                    <a href="https://www.uupoop.com/#/">在线PS&nbsp;</a> 
-                                    <a href="https://dns.wdvip.icu/home">免费域名</a><a href="https://space.bilibili.com/353379484">---征途wd&nbsp;</a> 
-                                    <a href="http://www.noti.top/2021/05/19/tooltip/">轻量级工具分享</a><a href="https://space.bilibili.com/477540505?spm_id_from=333.788.b_765f7570696e666f.2">---携手看星云&nbsp;</a> 
-                               </div>
-                        </div>
-
-                        <hr>
-                        <h2 id="ia_too" class="purplebows">特殊工具</h2>
-                        <div class="tool">
-                               <div class="hgrey_alink" style="FONT-SIZE: 20pt;">
-                                    <a href="another/tools/加密解密工具/加密解密工具.html">加密解密工具&nbsp;</a> 
-                                    <a href="another/tools/密码生成器/index.html">密码生成器&nbsp;</a> 
-                               </div>
-                        </div>
-
-
-                        <div align="right" style="FONT-SIZE: 5em;">
-                          <a class="social-icon" href="#body-wrap" target="_self" style="text-decoration:none;">
-                            <i class="fa fa-arrow-circle-o-up" style="color:#BEBEBE;" ></i>
-                          </a>
                         </div>
 
 <!--插入点-->
