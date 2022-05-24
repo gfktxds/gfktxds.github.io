@@ -6,21 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
     <title>雪，可不一定是白的</title>
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico">
+
+    <!-- 界面样式css引入 -->
     <link rel="stylesheet" href="static/css/index.css">
-    <link rel="stylesheet" href="static/plugin/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="static/plugin/jquery.fancybox-2.1.5/source/jquery.fancybox.css">
+    <!-- 界面字体css样式，如彩虹色 -->
     <link rel="stylesheet" href="static/css/font_styles.css">
+    <!-- home_ab事件 -->
     <script  src="static/js/index.js"></script>
+    <!-- 图标css字体引入 -->
+    <link rel="stylesheet" href="static/plugin/font-awesome-4.7.0/css/font-awesome.min.css">
     <!-- require APlayer -->
     <link rel="stylesheet" href="static/plugin/aplayer-1.10.1/dist/APlayer.min.css">
-
-
-    <!--看板娘js和css引入-->
-    <link href="live2D/Live2D.css" rel="stylesheet" type="text/css >
-    <script  src="live2D/L2Dwidget.0.min.js"></script>
-    <script  src="live2D/L2Dwidget.min.js"></script> 
-
     <!--距今时间插件调用-->
     <script src="static/plugin/clock-time/jquery.min.js"></script>
     <script type="text/javascript" src="static/plugin/clock-time/jscex.min.js"></script>
@@ -31,45 +28,12 @@
     <script type="text/javascript" src="static/plugin/clock-time/jscex-async-powerpack.min.js"></script>
     <script type="text/javascript" src="static/plugin/clock-time/functions.js" charset="utf-8"></script>
     <script type="text/javascript" src="static/plugin/clock-time/time.js" charset="utf-8"></script>
-    <!--字体引入-->
-    <style>
-    @font-face{
-        font-family: '方正卡通';
-        src: url("static/fonts_input/方正卡通简体.ttf");
-    }
-    @font-face{
-        font-family: 'NRM';
-        src:url("static/fonts_input/Times-New-Roman.ttf")
-    }
-    </style>
+
 
     <script type="text/javascript">
         if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
             alert('朋友，上古浏览器不支持呢~');
         }
-
-        //单目录页展开/隐藏
-        function one_fold(id){
-	        if (document.getElementById(id).style.display=="none"){
-	            document.getElementById(id).style.display="block";
-		    }else{
-	 	        document.getElementById(id).style.display="none";
-	    	}
-        eye_icon_judege(id);
-        }
-
-        function eye_icon_judege(id){
-            if(document.getElementById(id).style.display=="none"){
-               document.getElementById("i_eyes_home").style.display="none";
-               document.getElementById("i_eyes_slash_home").style.display = "inline";
-            }else{
-               document.getElementById("i_eyes_home").style.display="inline";
-               document.getElementById("i_eyes_slash_home").style.display = "none";
-            }
-        }
-
-
-
     </script>
     
 <base target="_blank">
@@ -82,9 +46,8 @@
             <div id="page_site-info">
                 <div id="site-title">
                     <span class="blogtitle"></span>
-
+                    <!-- 打字机效果插件 -->
                     <script src="static/js/typed.js"></script>
-                   
                     <script>
                         var typed = new Typed(".blogtitle", {
                             strings: ['当你还能失去的时候，你就绝对不是一无所有', '失去了所有的星光，不代表失去一切','把孤独藏进耳机，用琴声代替星云','我想提醒你，记忆是会说谎的','晨光起于白塔顶尖，终将照亮阴霾之地','你自以为的了解，不过是我随意的伪装','吹落杏花雨，春色逐水，漾漾流芳','命运最大的无情，就在于它睁着怜悯的眼睛，只是看着你','问君远方来，斜倚一弯琴江水','雪化的瞬间，是心弦颤动的声音','一些人感受雪雨，另一些人只是淋湿自己','当所有思绪都一点一点沉淀，你是愿意沉湎还是抬头再望','远山楼台听风雨，青鸟衔枝入梦来','秋日薄暮，用菊花煮竹叶青，人与海棠俱醉','人生大势成久必败，败久必成，是非成败转头空，几度夕阳红'],
@@ -152,31 +115,11 @@
                             </div>
                         </div>
                     </div>
-														
-<!--
-                    <div class="card-widget card-announcement">
-                        <div class="card-content">
-                            <div class="item-headline">
-                                <i class="fa fa-list" aria-hidden="true"></i>
-                                <span>目录
-                                  <a class="social-icon" onclick="one_fold('fold_list')" style="text-decoration:none;">
-                                  <i id="i_eyes_home" class="fa fa-eye"></i>
-                                  <i id="i_eyes_slash_home"class="fa fa-eye-slash" style="display:none;"></i>
-                                  </a>
-                                </span>
-                            </div>
-                            <div id="fold_list">
-                               <i class="fa fa-music" aria-hidden="true"><a href="#ia_musi" target="_self">&nbsp;音乐</a></i><br>
-                               <i class="fa fa-star-o" aria-hidden="true"><a href="#ia_indexi">&nbsp;导航</a></i><br>
-                            </div>
-                        </div>
-                    </div>
--->
-
-
-
 
                 </div>
+
+
+            
                 <article id="page">
                     <div class="article-container">
                         <h2 class="purplebows" id="ia_musi">音乐
@@ -185,23 +128,25 @@
                             <i id="mus_self" class="fa fa-heartbeat" style="font-size:15px; display: none;"></i>
                             <i id="mus_pure" class="fa fa-headphones" style="font-size:15px; display: none;"></i></a>
                         </h2>
-                          <div id="music_li">
-                            <meting-js auto="https://y.qq.com/n/ryqq/playlist/8444199365.html">
-                            </meting-js>
-                          </div>
-                          <div id="music_self" style="display:none;">
-                            <div id="m_self"></div>
-                          </div>
-                          <div id="music_pure" style="display:none;">
-                            <div id="m_pure"></div>
-                          </div>
-                          <!--Aplayer-->
-                          <script src="static/plugin/aplayer-1.10.1/dist/APlayer.min.js"></script>
-                          <script src="static/js/music_h.js"></script>
+                            <div id="music_li">
+                               <meting-js auto="https://y.qq.com/n/ryqq/playlist/8444199365.html">
+                               </meting-js>
+                            </div>
+                            <div id="music_self" style="display:none;">
+                               <div id="m_self"></div>
+                            </div>
+                            <div id="music_pure" style="display:none;">
+                               <div id="m_pure"></div>
+                            </div>
+                            <!--Aplayer，一个音乐播放器插件-->
+                            <script src="static/plugin/aplayer-1.10.1/dist/APlayer.min.js"></script>
+                            <script src="static/js/music_h.js"></script>
+                            <!-- AplayerEnd -->
                         <hr>
                         <h2 >
                            <div id="ia_indexi" class="purplebows">
-                        导航
+                            导航
+                           </div>
                         </h2>
                         <div class="tool">
                                <div class="hgrey_alink" style="FONT-SIZE: 20pt; ">
@@ -223,102 +168,24 @@
         </footer>
     </div>
 
-
+    <!-- jquery插件 -->
+    <link rel="stylesheet" href="static/plugin/jquery.fancybox-2.1.5/source/jquery.fancybox.css">
     <script src="static/plugin/jquery.min.js-3.5.1/jquery.min.js"></script>
     <script src="static/plugin/jquery.fancybox-2.1.5/source/jquery.fancybox.js"></script>
+    <!-- 鼠标悬停预加载 -->
     <script src="static/js/instantpage.js" type="module"></script>
-
-
-    <!-- require MetingJS -->
+    <!-- require MetingJS ，用于加载QQ音乐等，依赖于Aplayer-->
     <script src="static/plugin/meting-2.0.1/dist/Meting.min.js"></script>
-
-    <!-- nplayer -->
+    <!-- nplayer，一个视频播放器插件 -->
     <script src="static/plugin/nplayer-1.0.10/dist/index.min.js"></script>
-
     <!--   一言、今日诗词   -->
     <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
     <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-
-    <!-- 看板娘 -->
- <script >
-        L2Dwidget.init({"display": {
-            "superSample": 2,
-            "width": 50,
-            "height": 100,
-                "position": "left",
-                    "hOffset": 10,
-            "vOffset": 0
-            }
-        });
-
-</script>
-
     <!--鼠标点击效果-->
-
     <script src="static/js/maodian.js"></script>
-
-    <script type="text/javascript">
-        console.clear();
-        (function ($) {
-            $.fn.snow = function (options) {
-                var $flake = $('<div id="snowbox" />').css({ 'position': 'absolute', 'z-index': '9999', 'top': '-50px' }).html('&#10052;'),
-                    documentHeight = $(document).height(),
-                    documentWidth = $(document).width(),
-                    defaults = {
-                        minSize: 10,
-                        maxSize: 20,
-                        newOn: 1000,
-                        flakeColor: "#66FFFF" /* 此处可以定义雪花颜色，若要白色可以改为#FFFFFF */
-                    },
-                    options = $.extend({}, defaults, options);
-                var interval = setInterval(function () {
-                    var startPositionLeft = Math.random() * documentWidth - 100,
-                        startOpacity = 0.5 + Math.random(),
-                        sizeFlake = options.minSize + Math.random() * options.maxSize,
-                        endPositionTop = documentHeight - 200,
-                        endPositionLeft = startPositionLeft - 500 + Math.random() * 500,
-                        durationFall = documentHeight * 10 + Math.random() * 5000;
-                    $flake.clone().appendTo('body').css({
-                        left: startPositionLeft,
-                        opacity: startOpacity,
-                        'font-size': sizeFlake,
-                        color: options.flakeColor
-                    }).animate({
-                        top: endPositionTop,
-                        left: endPositionLeft,
-                        opacity: 0.2
-                    }, durationFall, 'linear', function () {
-                        $(this).remove()
-                    });
-                }, options.newOn);
-            };
-        })(jQuery);
-        $(function () {
-            $.fn.snow({
-                minSize: 5, /* 定义雪花最小尺寸 */
-                maxSize: 50,/* 定义雪花最大尺寸 */
-                newOn: 500  /* 定义密集程度，数字越小越密集 */
-            });
-        });
-
-        // 浏览器搞笑标题
-        var OriginTitle = document.title;
-        var titleTime;
-        document.addEventListener('visibilitychange', function () {
-            if (document.hidden) {
-                // $('[rel="icon"]').attr('href', "/funny.ico");
-                document.title = '╭(°A°`)╮ 页面崩溃啦 ~';
-                clearTimeout(titleTime);
-            }
-            else {
-                $('[rel="icon"]').attr('href', "/favicon.ico");
-                document.title = '(ฅ>ω<*ฅ) 噫又好啦 ~' + OriginTitle;
-                titleTime = setTimeout(function () {
-                    document.title = OriginTitle;
-                }, 2000);
-            }
-        });
-    </script>
+    <!-- 雪花插件 -->
+    <script src="static/plugin/snow/snow.js"></script>
+    <!-- 浏览器搞笑标题 -->
+    <script src="static/plugin/internet-joke-title/joke.js"></script>
 </body>
-
 </html>
