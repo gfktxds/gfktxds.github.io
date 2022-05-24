@@ -1,3 +1,4 @@
+
 *{
 	padding: 0;
 	margin: 0;
@@ -5,7 +6,6 @@
 
 .purplebows{
         font-size: 20pt;
-        font-family: 方正卡通;
         font-weight: bold;
         color: white;
         background-image: linear-gradient(
@@ -29,7 +29,6 @@
     }
 .rainbows{
         font-size: 20pt;
-        font-family: 方正卡通;
         font-weight: bold;
         color: white;
         background-image: linear-gradient(
@@ -67,21 +66,18 @@ div#fold_list i a{
 div.hgrey_alink>a{
     color:grey;
     text-decoration:none;
-    font-family: 'NRM',方正卡通;
 }
 
 
 div.grey_alink>a{
     color:grey;
     text-decoration:none;
-    font-family: 'NRM';
 }
 
 
 nobr.fold-title{
     color: grey;
     font-size: 1.7em;
-    font-family: 'NRM';
 }
 
 div#a_publish>a{
