@@ -67,15 +67,17 @@ div.iarrow_up a i{
 }
 
 /* 主页的索引链接 */
-div.hgrey_alink>a{
+div.hgrey_alink a,div{
     color:grey;
     text-decoration:none;
+    font-size: 20px;
 }
 
 /* GTS正文索引链接 */
-div.grey_alink>a{
+div.grey_alink a{
     color:grey;
     text-decoration:none;
+    font-size: 20px;
 }
 /* GTS作者发布页 小标题字体样式 */
 nobr.fold-title{
@@ -83,8 +85,8 @@ nobr.fold-title{
     font-size: 1.7em;
 }
 /* GTS作者发布页正文样式 */
-div#a_publish>a{
+div#a_publish nobr,a,i{
     color: grey;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 20px;
 }
