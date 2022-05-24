@@ -6,32 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
     <title>雪，可不一定是白的</title>
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <!-- 界面样式css引入 -->
     <link rel="stylesheet" href="../static/css/index.css">
-
-    <link rel="stylesheet" href="../static/plugin/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../static/plugin/jquery.fancybox-2.1.5/source/jquery.fancybox.css">
-
+    <!-- 界面字体css样式 -->
     <link rel="stylesheet" href="../static/css/font_styles.css">
-
-<!--看板娘js和css引入-->
-
-    <link href="../live2D/Live2D.css" rel="stylesheet" type="text/css >
-    <script  src="../live2D/L2Dwidget.0.min.js"></script>
-    <script  src="../live2D/L2Dwidget.min.js"></script>
-
-<!--字体引入-->
-<style>
-    @font-face{
-       font-family: '方正卡通';
-       src: url("../static/fonts_input/方正卡通简体.ttf");
-    }
-    @font-face{
-       font-family: 'NRM';
-       src:url("../static/fonts_input/Times-New-Roman.ttf")
-    }
-</style>
-
+    <!-- 图标css字体引入 -->
+    <link rel="stylesheet" href="../static/plugin/font-awesome-4.7.0/css/font-awesome.min.css">
 
     <script type="text/javascript">
         if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
@@ -49,10 +30,8 @@
             <div id="page_site-info">
                 <div id="site-title">
                     <span class="blogtitle"></span>
-                    <!--
+                    <!-- 打字机效果插件 -->
                     <script src="../static/js/typed.js"></script>
-                    -->
-                    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
                     <script>
                         var typed = new Typed(".blogtitle", {
                             strings: ['当你还能失去的时候，你就绝对不是一无所有', '失去了所有的星光，不代表失去一切','把孤独藏进耳机，用琴声代替星云','我想提醒你，记忆是会说谎的','晨光起于白塔顶尖，终将照亮阴霾之地','你自以为的了解，不过是我随意的伪装','吹落杏花雨，春色逐水，漾漾流芳','命运最大的无情，就在于它睁着怜悯的眼睛，只是看着你','问君远方来，斜倚一弯琴江水','雪化的瞬间，是心弦颤动的声音','一些人感受雪雨，另一些人只是淋湿自己','当所有思绪都一点一点沉淀，你是愿意沉湎还是抬头再望','远山楼台听风雨，青鸟衔枝入梦来','秋日薄暮，用菊花煮竹叶青，人与海棠俱醉','人生大势成久必败，败久必成，是非成败转头空，几度夕阳红'],
@@ -137,9 +116,9 @@
                                     <a href="https://bestporncomix.com/?s=giantess">Bestporncomix&nbsp;&nbsp;</a>
                                     <a href="https://giantess.me/">Giantess.me&nbsp;&nbsp;</a>
                               </div>
-			          </div>
+			              </div>
 							 
-			  <hr>
+			              <hr>
                           <h2 class="purplebows">视频</h2>
                               <div class="tool">
                                  <div class="grey_alink" style="FONT-SIZE: 15pt;">
@@ -248,95 +227,21 @@
             </div>
         </footer>
     </div>
+    <!-- jquery插件 -->
+    <link rel="stylesheet" href="../static/plugin/jquery.fancybox-2.1.5/source/jquery.fancybox.css">
     <script src="../static/plugin/jquery.min.js-3.5.1/jquery.min.js"></script>
     <script src="../static/plugin/jquery.fancybox-2.1.5/source/jquery.fancybox.js"></script>
-
+    <!-- 鼠标悬停预加载 -->
     <script src="../static/js/instantpage.js" type="module"></script>
-
     <!--   一言、今日诗词   -->
     <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
     <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-
-    <!-- 看板娘 -->
- <script >
-        L2Dwidget.init({"display": {
-            "superSample": 2,
-            "width": 50,
-            "height": 100,
-                "position": "left",
-                    "hOffset": 10,
-            "vOffset": 0
-            }
-        });
-
-</script>
-
     <!--鼠标点击效果-->
-
     <script src="../static/js/maodian.js"></script>
-
-    <script type="text/javascript">
-        console.clear();
-        (function ($) {
-            $.fn.snow = function (options) {
-                var $flake = $('<div id="snowbox" />').css({ 'position': 'absolute', 'z-index': '9999', 'top': '-50px' }).html('&#10052;'),
-                    documentHeight = $(document).height(),
-                    documentWidth = $(document).width(),
-                    defaults = {
-                        minSize: 10,
-                        maxSize: 20,
-                        newOn: 1000,
-                        flakeColor: "#66FFFF" /* 此处可以定义雪花颜色，若要白色可以改为#FFFFFF */
-                    },
-                    options = $.extend({}, defaults, options);
-                var interval = setInterval(function () {
-                    var startPositionLeft = Math.random() * documentWidth - 100,
-                        startOpacity = 0.5 + Math.random(),
-                        sizeFlake = options.minSize + Math.random() * options.maxSize,
-                        endPositionTop = documentHeight - 200,
-                        endPositionLeft = startPositionLeft - 500 + Math.random() * 500,
-                        durationFall = documentHeight * 10 + Math.random() * 5000;
-                    $flake.clone().appendTo('body').css({
-                        left: startPositionLeft,
-                        opacity: startOpacity,
-                        'font-size': sizeFlake,
-                        color: options.flakeColor
-                    }).animate({
-                        top: endPositionTop,
-                        left: endPositionLeft,
-                        opacity: 0.2
-                    }, durationFall, 'linear', function () {
-                        $(this).remove()
-                    });
-                }, options.newOn);
-            };
-        })(jQuery);
-        $(function () {
-            $.fn.snow({
-                minSize: 5, /* 定义雪花最小尺寸 */
-                maxSize: 50,/* 定义雪花最大尺寸 */
-                newOn: 500  /* 定义密集程度，数字越小越密集 */
-            });
-        });
-
-        // 浏览器搞笑标题
-        var OriginTitle = document.title;
-        var titleTime;
-        document.addEventListener('visibilitychange', function () {
-            if (document.hidden) {
-                // $('[rel="icon"]').attr('href', "/funny.ico");
-                document.title = '╭(°A°`)╮ 页面崩溃啦 ~';
-                clearTimeout(titleTime);
-            }
-            else {
-                $('[rel="icon"]').attr('href', "/favicon.ico");
-                document.title = '(ฅ>ω<*ฅ) 噫又好啦 ~' + OriginTitle;
-                titleTime = setTimeout(function () {
-                    document.title = OriginTitle;
-                }, 2000);
-            }
-        });
-    </script>
+    <!-- 雪花插件 -->
+    <script src="../static/plugin/snow/snow.js"></script>
+    <!-- 浏览器搞笑标题 -->
+    <script src="../static/plugin/internet-joke-title/joke.js"></script>
 </body>
 
 </html>
