@@ -66,14 +66,15 @@ div.iarrow_up a i{
     z-index: 2;
 }
 
-/* 主页的索引链接 */
-div.hgrey_alink a,div{
+/* 主页和索引的内容链接文字样式 */
+div.hgrey_alink a,
+div.hgrey_alink div{
     color:grey;
     text-decoration:none;
     font-size: 20px;
 }
 
-/* GTS正文索引链接 */
+/* GTS正文索引内容链接文字样式 */
 div.grey_alink a{
     color:grey;
     text-decoration:none;
@@ -84,8 +85,10 @@ nobr.fold-title{
     color: grey;
     font-size: 1.7em;
 }
-/* GTS作者发布页正文样式 */
-div#a_publish nobr,a,i{
+/* GTS作者发布页 正文样式 */
+div#a_publish nobr,
+div#a_publish a,
+div#a_publish i{
     color: grey;
     text-decoration: none;
     font-size: 20px;
