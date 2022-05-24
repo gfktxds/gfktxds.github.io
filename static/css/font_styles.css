@@ -1,9 +1,3 @@
-
-*{
-	padding: 0;
-	margin: 0;
-}
-
 .purplebows{
         font-size: 20pt;
         font-weight: bold;
@@ -57,29 +51,38 @@
 }
 
 
-
+/* 个人导航索引目录字体样式 */
 div#fold_list i a{
     color:#7B7B7B;
     text-decoration:none;
 }
+/* 个人导航索引右下角的回到目录箭头 */
+div.iarrow_up a i{
+    color:#BEBEBE;
+    position: fixed;
+    right: 30px;
+    bottom: 5px;
+    font-size: 3em;
+    z-index: 2;
+}
 
+/* 主页的索引链接 */
 div.hgrey_alink>a{
     color:grey;
     text-decoration:none;
 }
 
-
+/* GTS正文索引链接 */
 div.grey_alink>a{
     color:grey;
     text-decoration:none;
 }
-
-
+/* GTS作者发布页 小标题字体样式 */
 nobr.fold-title{
     color: grey;
     font-size: 1.7em;
 }
-
+/* GTS作者发布页正文样式 */
 div#a_publish>a{
     color: grey;
     text-decoration: none;
