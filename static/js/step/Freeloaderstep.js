@@ -1,0 +1,1 @@
+window.location.href='../html/resource/白嫖怪的福音/白嫖怪的福音.html';
