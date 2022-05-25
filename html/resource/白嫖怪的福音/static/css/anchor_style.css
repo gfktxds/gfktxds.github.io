@@ -1,0 +1,23 @@
+/* 设置超链接伪元素样式 */
+a:link {
+    color:white;
+    text-decoration:underline;
+}
+a:visited {
+    color:white;
+    text-decoration:underline;
+}
+a:hover {
+    color:red;
+    text-decoration:underline;
+}
+a:active {
+    color:black;
+    text-decoration:underline;
+}
+
+a.r_f{
+    color:white;
+    text-decoration: none;
+    cursor:pointer;
+}
