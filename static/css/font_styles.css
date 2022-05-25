@@ -93,3 +93,11 @@ div#a_publish i{
     text-decoration: none;
     font-size: 20px;
 }
+
+/* 颜色样式 */
+.c_green{
+    color: #33CC00;
+}
+.c_blue{
+    color:#66FFFF;
+}
