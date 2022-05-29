@@ -484,11 +484,11 @@ html, body, header, nav, footer, div, ul, ol, li, p, form, input, a, span, em, i
 }
 
 /** 小屏自动隐藏播放器 */
-@media (max-width: 860px) {
+/* @media (max-width: 860px) {
     #jp_container_N {
         display: none;
     }
-}
+} */
 /** 标题 */
 .jp-music-title {
     display: block;
