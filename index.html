@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+ <head> 
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" /> 
+  <meta http-equiv="Cache-Control" content="no-siteapp" /> 
+  <meta name="apple-mobile-web-app-capable" content="yes" /> 
+  <meta name="apple-touch-fullscreen" content="yes" /> 
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" /> 
+  <meta name="full-screen" content="yes" />
+  <!--UC强制全屏--> 
+  <meta name="browsermode" content="application" />
+  <!--UC应用模式--> 
+  <meta name="x5-fullscreen" content="true" />
+  <!--QQ强制全屏--> 
+  <meta name="x5-page-mode" content="app" />
+  <!--QQ应用模式--> 
+    <title>雨中漫步</title>
+    <!-- 结构和搜索样式 -->
+    <link rel="stylesheet" href="static/search_assets/css/index.css">
+    <link rel="stylesheet" href="static/search_assets/css/search.css">
+    <!-- 图标 -->
+    <link rel="stylesheet" href="static/search_assets/css/font_1230786_gdvd1b4wlz.css">
+    <link rel="stylesheet" href="static/search_assets/css/font_1572019_yrk10qvz.css">
+</head>
+<body>
+    <div id="search" class="s-search">
+        <div id="search-list" class="hide-type-list">
+         <div class="s-type">
+          <span></span>
+          <div class="s-type-list animated fadeInUp">
+           <label for="type-home">常用</label>
+           <label for="type-bing">搜索</label>
+           <label for="type-bili">视频</label>
+           <label for="type-qqmusic">音乐</label>
+           <label for="type-zhihu">社区</label>
+          </div>
+         </div>
+         <div class="search-group group-a s-current">
+          <span class="type-text">常用</span>
+          <ul class="search-type">
+           <li><input onclick="bw()" checked="" hidden="" type="radio" name="type" id="type-home" value="home.html" data-placeholder="#"><label for="type-home"><span>主页</span></label></li>
+           <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-baidu" value="https://www.baidu.com/s?wd=" data-placeholder="百度一下"><label for="type-baidu"><span>Baidu</span></label></li>
+           <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-bilibili" value="https://search.bilibili.com/all?keyword=" data-placeholder="哔哩哔哩 (゜-゜)つロ 干杯"><label for="type-bilibili"><span>哔哩哔哩</span></label></li>
+          </ul>
+         </div>
+         <div class="search-group group-b">
+          <span class="type-text">搜索</span>
+          <ul class="search-type">
+           <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-bing" value="https://cn.bing.com/search?q=" data-placeholder="微软Bing搜索"><label for="type-bing"><span>Bing</span></label></li>
+           <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-search" value="https://www.baidu.com/s?wd=" data-placeholder="百度一下"><label for="type-search"><span>百度</span></label></li>
+           <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-google" value="https://www.google.com/search?q=" data-placeholder="谷歌两下"><label for="type-google"><span>Google</span></label></li>
+           <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-sogo" value="https://www.sogou.com/web?query=" data-placeholder="搜狗搜索"><label for="type-sogo"><span>搜狗</span></label></li>
+           <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-sm" value="https://yz.m.sm.cn/s?q=" data-placeholder="UC移动端搜索"><label for="type-sm"><span>神马</span></label></li>
+          </ul>
+         </div>
+         <div class="search-group group-c">
+          <span class="type-text">视频</span>
+          <ul class="search-type">
+           <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-bili" value="https://search.bilibili.com/all?keyword=" data-placeholder="哔哩哔哩 (゜-゜)つロ 干杯"><label for="type-bili"><span>哔哩哔哩</span></label></li>
+           <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-links" value="http://acfun.cn/search?keyword=" data-placeholder="AcFun弹幕视频网"><label for="type-links"><span>AcFun</span></label></li>
+           <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-omo" value="https://omofun.tv/vod/search.html?wd=" data-placeholder="Omofun"><label for="type-omo"><span>Omofun</span></label></li>
+           <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-youku" value="https://so.youku.com/search_video/q_" data-placeholder="YouKu优酷"><label for="type-youku"><span>优酷</span></label></li>
+           <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-Youtube" value="https://www.youtube.com/results?search_query=" data-placeholder="YouTuBe"><label for="type-Youtube"><span>YouTuBe</span></label></li>
+          </ul>
+         </div>
+         <div class="search-group group-d">
+          <span class="type-text">音乐</span>
+          <ul class="search-type">
+            <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-qqmusic" value="https://y.qq.com/n/ryqq/search?w=" data-placeholder="QQ音乐"><label for="type-qqmusic"><span>QQ音乐</span></label></li>
+            <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-wangyiyun" value="https://music.163.com/#/search/m/?s=" data-placeholder="网易云音乐"><label for="type-wangyiyun"><span>网易云</span></label></li>
+            <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-kugou" value="https://www.kugou.com/yy/html/search.html#searchType=song&searchKeyWord=" data-placeholder="酷狗音乐"><label for="type-kugou"><span>酷狗</span></label></li>
+            <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-kuwo" value="https://kuwo.cn/search/list?key=" data-placeholder="酷我音乐"><label for="type-kuwo"><span>酷我</span></label></li>
+            <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-freemp3" value="http://tools.liumingye.cn/music/?page=searchPage" data-placeholder="#"><label for="type-freemp3"><span>MyFreeMP3</span></label></li>
+
+          </ul>
+         </div>
+         <div class="search-group group-e">
+          <span class="type-text">社区</span>
+          <ul class="search-type">
+            <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-zhihu" value="https://www.zhihu.com/search?type=content&amp;q=" data-placeholder="知乎"><label for="type-zhihu"><span>知乎</span></label></li>
+           <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-weibo" value="http://s.weibo.com/weibo/" data-placeholder="微博"><label for="type-weibo"><span>微博</span></label></li>
+           <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-why" value="https://tieba.baidu.com/f?ie=utf-8&amp;kw=" data-placeholder="百度贴吧"><label for="type-why"><span>贴吧</span></label></li>
+         </ul>
+         </div>
+        </div>
+        <form action=" " method="get" target="_blank" id="super-search-fm" style="display: block;">
+         <input type="text" id="search-text" placeholder=" " style="outline:0">
+         <button type="submit"><i class="iconfont icon-xdss"></i></button>
+         <ul id="ul" class="ko"></ul>
+        </form>
+        <div id="yy" style="display:none;">
+         <input type="text" id="kos" placeholder=" ">
+         <button type="submit" id="kob"><i class="iconfont icon-xdss"></i></button>
+         <ul id="kol" class="ko"></ul>
+        </div>
+        <div class="set-check hidden-xs">
+         <input type="checkbox" id="set-search-blank" class="bubble-3" autocomplete="off">
+        </div>
+       </div>
+
+
+    <!-- 音乐播放器Begin -->
+       <div id="jp_container_N" class="jp-video jp-video-270p jp-state-playing" role="application" aria-label="media player">
+        <div class="jp-type-playlist">
+            <!-- 播放器界面 -->
+            <div id="jquery_jplayer_N" class="jp-jplayer"></div>
+            <div class="jp-gui">
+                <!-- 标题 -->
+                <div class="jp-music-title">歌名</div>
+                <div class="jp-video-play" style="display: none;">
+                    <button class="jp-video-play-icon" role="button" tabindex="0">播放</button>
+                </div>
+                <div class="jp-interface">
+                    <div class="jp-progress">
+                        <div class="jp-seek-bar" style="width: 100%;">
+                            <div class="jp-play-bar" style="overflow: hidden; width: 97.5219%;"></div>
+                        </div>
+                    </div>
+                    <div class="jp-current-time" role="timer" aria-label="time">04:11</div>
+                    <div class="jp-duration" role="timer" aria-label="duration">04:17</div>
+                    <div class="jp-controls-holder">
+                        <div class="jp-controls">
+                            <button class="jp-previous" role="button" tabindex="0">上一曲</button>
+                            <button class="jp-play" role="button" tabindex="0">播放</button>
+                            <button class="jp-next" role="button" tabindex="0">下一曲</button>
+                            <button class="jp-stop" role="button" tabindex="0">暂停</button>
+                        </div>
+                        <div class="jp-volume-controls">
+                            <button class="jp-mute" role="button" tabindex="0">静音</button>
+                            <button class="jp-volume-max" role="button" tabindex="0">最大音量</button>
+                            <div class="jp-volume-bar">
+                                <div class="jp-volume-bar-value" style="width: 10%;"></div>
+                            </div>
+                        </div>
+                        <div class="jp-toggles">
+                            <button class="jp-repeat" role="button" tabindex="0">重复</button>
+                            <button class="jp-shuffle" role="button" tabindex="0">随机</button>
+                        </div>
+                    </div>
+                    <div class="jp-details" style="display: none;">
+                        <div class="jp-title" aria-label="title">music</div>
+                    </div>
+                </div>
+            </div>
+            <div class="jp-playlist">
+                <div class="jp-playlist-box">
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+            <div class="jp-no-solution" style="display: none;">
+                <span style="transform: rotate(180deg);">升级需要</span>您浏览器暂不支持播放，请更新版本
+                <a href="http://get.adobe.com/flashplayer" target="_blank">Flash插件</a>.
+            </div>
+        </div>
+        <div class="scrollBar" style="display: none;">
+            <div class="bar"></div>
+        </div>
+        <button type="button" class="folded_bt" title="点击收缩" id="btnfold">
+            <span style="transform: rotate(180deg);"></span>
+        </button>
+        <!--<div id="listRemove" style="display: block;"></div>-->
+        <div id="listClose"></div>
+        </div>
+        <link rel="stylesheet" href="static/search_assets/plugin/music/css/player.css">
+        <script type="text/javascript" src="static/search_assets/plugin/music/js/jquery.min.js"></script> 
+        <script type="text/javascript" src="static/search_assets/plugin/music/js/music_list.js"></script>
+        <script type="text/javascript" src="static/search_assets/plugin/music/js/player.js"></script>
+        <script type="text/javascript" src="static/search_assets/plugin/music/js/playlist.js"></script>
+        <script type="text/javascript" src="static/search_assets/plugin/music/js/player_database.js"></script>
+    <!-- 音乐播放器OVER -->
+
+
+       <!-- Begin下雨参数设置，请在下面修改，rainDrops--密度 windPower--下落速度 direction--下落方向，还可以改width和weight，但是请同时去修改weather_style.js的内容 -->
+       <canvas id="myCanvas" rainDrops="300" windPower="1" direction="left"></canvas>
+       <!--下雨 -->
+       <script type="text/javascript" src="static/search_assets/plugin/weather_rain/weather.min.js"></script> 
+       <script type="text/javascript" src="static/search_assets/plugin/weather_rain/weather_style.js"></script> 
+        <!-- 下雨over -->
+
+       <!-- 搜索 -->
+       <script type="text/javascript" src="static/search_assets/js/sousuo.js"></script> 
+</body>
+</html>
