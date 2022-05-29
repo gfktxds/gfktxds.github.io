@@ -43,5 +43,13 @@ input::-moz-placeholder { /* Firefox 19+ */
     }
     body{
         background: url('https://img2.baidu.com/it/u=2502059100,3052078260&fm=253&fmt=auto&app=138&f=JPEG?w=281&h=499');
+        background-size: cover;
+        filter: brightness(0.9);
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    
+        color: #fff;
+        overflow: hidden;
     }
 }
