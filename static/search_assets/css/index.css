@@ -27,3 +27,21 @@ input::-moz-placeholder { /* Firefox 19+ */
    color: #fff;
    opacity: 1;
 }
+
+#phone_bgmu{
+    display: none;
+}
+
+@media (max-width: 860px) {
+    #jp_container_N {
+        display: none;
+    }
+    #phone_bgmu{
+        position:absolute;
+        top:10px;
+        display: block;
+    }
+    body{
+        background: url('https://img2.baidu.com/it/u=2502059100,3052078260&fm=253&fmt=auto&app=138&f=JPEG?w=281&h=499');
+    }
+}
