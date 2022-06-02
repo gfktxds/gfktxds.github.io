@@ -40,6 +40,7 @@
            <label for="type-bili">视频</label>
            <label for="type-qqmusic">音乐</label>
            <label for="type-zhihu">社区</label>
+           <label for="type-twitter">破冰</label>
           </div>
          </div>
          <div class="search-group group-a s-current">
@@ -88,11 +89,29 @@
           <span class="type-text">社区</span>
           <ul class="search-type">
             <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-zhihu" value="https://www.zhihu.com/search?type=content&amp;q=" data-placeholder="知乎"><label for="type-zhihu"><span>知乎</span></label></li>
-           <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-weibo" value="http://s.weibo.com/weibo/" data-placeholder="微博"><label for="type-weibo"><span>微博</span></label></li>
-           <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-why" value="https://tieba.baidu.com/f?ie=utf-8&amp;kw=" data-placeholder="百度贴吧"><label for="type-why"><span>贴吧</span></label></li>
+            <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-weibo" value="http://s.weibo.com/weibo/" data-placeholder="微博"><label for="type-weibo"><span>微博</span></label></li>
+            <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-why" value="https://tieba.baidu.com/f?ie=utf-8&amp;kw=" data-placeholder="百度贴吧"><label for="type-why"><span>贴吧</span></label></li>
          </ul>
          </div>
+
+         <div class="search-group group-f">
+          <span class="type-text">破冰</span>
+          <ul class="search-type">
+            <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-twitter" value="https://twitter.com/search?q=" data-placeholder="Twitter"><label for="type-twitter"><span>Twitter</span></label></li>
+            <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-fantia" value="https://fantia.jp/fanclubs?utf8=%E2%9C%93&category=&brand_type=0&keyword=" data-placeholder="Fantia"><label for="type-fantia"><span>Fantia</span></label></li>            
+            <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-fanbox" value="https://www.fanbox.cc/search?type=creator&q=" data-placeholder="Fanbox"><label for="type-fanbox"><span>Fanbox</span></label></li>
+            <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-patreon" value="https://www.patreon.com/search?q=" data-placeholder="Patreon"><label for="type-patreon"><span>Patreon</span></label></li>
+            <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-piviv" value="https://www.pixiv.net/" data-placeholder="Piviv"><label for="type-piviv"><span><a class="link_a_style" href="https://www.pixiv.net/">Piviv</a></span></label></li>
+
+          </ul>
+         </div>
+
+
+
         </div>
+
+
+
         <form action=" " method="get" target="_blank" id="super-search-fm" style="display: block;">
          <input type="text" id="search-text" placeholder=" " style="outline:0">
          <button type="submit"><i class="iconfont icon-xdss"></i></button>
