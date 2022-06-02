@@ -32,6 +32,13 @@ input::-moz-placeholder { /* Firefox 19+ */
     display: none;
 }
 
+.link_a_style{
+    color:#fff;
+    text-decoration:none;
+    display: inline-block;
+}
+
+
 @media (max-width: 860px) {
     #jp_container_N {
         display: none;
