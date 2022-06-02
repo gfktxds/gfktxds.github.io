@@ -24,9 +24,11 @@
     <link rel="stylesheet" href="static/search_assets/css/font_1230786_gdvd1b4wlz.css">
     <link rel="stylesheet" href="static/search_assets/css/font_1572019_yrk10qvz.css">
 </head>
+<base target="_blank">
 <body>
+    <!-- 该样式设定在music插件的player.css倒数第二个样式 -->
     <audio id="phone_bgmu" autoplay="autoplay" loop="loop" preload="auto" controls="controls"
-            src="https://img-cdn2.yespik.com/sound/00/32/59/75/325975_ce5110162f896d1496e7c340226e6d1f.mp3">       
+        src="https://img-cdn2.yespik.com/sound/00/32/59/75/325975_ce5110162f896d1496e7c340226e6d1f.mp3">       
     </audio>
     <div id="search" class="s-search">
         <div id="search-list" class="hide-type-list">
@@ -43,7 +45,7 @@
          <div class="search-group group-a s-current">
           <span class="type-text">常用</span>
           <ul class="search-type">
-           <li><input onclick="bw()" checked="" hidden="" type="radio" name="type" id="type-home" value="home.html#" data-placeholder="雪，可不一定是白的"><label for="type-home"><span>主页</span></label></li>
+           <li><input onclick="bw()" checked="" hidden="" type="radio" name="type" id="type-home" value="home.html#" data-placeholder="雪，可不一定是白的"><label for="type-home"><span><a class="link_a_style" href="home.html">主页</a></span></label></li>
            <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-baidu" value="https://www.baidu.com/s?wd=" data-placeholder="百度一下"><label for="type-baidu"><span>Baidu</span></label></li>
            <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-bilibili" value="https://search.bilibili.com/all?keyword=" data-placeholder="哔哩哔哩 (゜-゜)つロ 干杯"><label for="type-bilibili"><span>哔哩哔哩</span></label></li>
           </ul>
@@ -65,6 +67,9 @@
            <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-links" value="http://acfun.cn/search?keyword=" data-placeholder="AcFun弹幕视频网"><label for="type-links"><span>AcFun</span></label></li>
            <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-omo" value="https://omofun.tv/vod/search.html?wd=" data-placeholder="Omofun"><label for="type-omo"><span>Omofun</span></label></li>
            <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-youku" value="https://so.youku.com/search_video/q_" data-placeholder="YouKu优酷"><label for="type-youku"><span>优酷</span></label></li>
+           <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-aiqiyi" value="https://so.iqiyi.com/so/q_" data-placeholder="iQIYI爱奇艺"><label for="type-aiqiyi"><span>爱奇艺</span></label></li>
+           <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-tengxun" value="https://v.qq.com/x/search/?q=" data-placeholder="腾讯视频"><label for="type-tengxun"><span>腾讯视频</span></label></li>
+           <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-douyin" value="https://www.douyin.com/search/" data-placeholder="抖音网页版"><label for="type-douyin"><span>抖音网页版</span></label></li>
            <li><input onclick="bw()" hidden="" type="radio" name="type" id="type-Youtube" value="https://www.youtube.com/results?search_query=" data-placeholder="YouTuBe"><label for="type-Youtube"><span>YouTuBe</span></label></li>
           </ul>
          </div>
