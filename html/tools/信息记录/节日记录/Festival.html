@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>节日记录</title>
+    <!-- <link rel="stylesheet" type="text/css" href="https://blog.huangwx.cn/css/sweetalert.css">
+    <script type="text/javascript" src="https://blog.huangwx.cn/js/sweetalert-dev.js"></script> -->
+    <script src="../js/calendar.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/special.js"></script>
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="js/fes_index.js"></script>
+</head>
+<body onload="loading_fes()">
+        <table>
+            <tr>
+                <th colspan="7">节日记录表</th>
+            </tr>
+            <tr>
+                <th>类别</th>
+                <th>序号</th>
+                <th>节日名称</th>
+                <th>日期</th>
+                <th>今年该节日阳历日期</th>
+                <th>明年该节日阳历日期</th>
+                <th>倒计时(/天)</th>
+            </tr>
+
+            <tr>
+                <th rowspan="8">传统节日</th>
+                <td class="fes_list_nums"></td>
+                <td>春节</td>
+                <td class="nonglis">正月初一</td>
+                <td class="jnnlsrs"></td>
+                <td class="mnnlsrs"></td>
+                <td class="nldaojishis"></td>
+            </tr>
+            <tr>
+                <td class="fes_list_nums"></td>
+                <td>元宵节</td>
+                <td class="nonglis">正月十五</td>
+                <td class="jnnlsrs"></td>
+                <td class="mnnlsrs"></td>
+                <td class="nldaojishis"></td>
+            </tr>
+            <tr>
+                <td class="fes_list_nums"></td>
+                <td>龙抬头</td>
+                <td class="nonglis">二月初二</td>
+                <td class="jnnlsrs"></td>
+                <td class="mnnlsrs"></td>
+                <td class="nldaojishis"></td>
+            </tr>
+            <tr>
+                <td class="fes_list_nums"></td>
+                <td>端午节</td>
+                <td class="nonglis">五月初五</td>
+                <td class="jnnlsrs"></td>
+                <td class="mnnlsrs"></td>
+                <td class="nldaojishis"></td>
+            </tr>
+            <tr>
+                <td class="fes_list_nums"></td>
+                <td>七夕节</td>
+                <td class="nonglis">七月初七</td>
+                <td class="jnnlsrs"></td>
+                <td class="mnnlsrs"></td>
+                <td class="nldaojishis"></td>
+            </tr>
+            <tr>
+                <td class="fes_list_nums"></td>
+                <td>中元节</td>
+                <td class="nonglis">七月十五</td>
+                <td class="jnnlsrs"></td>
+                <td class="mnnlsrs"></td>
+                <td class="nldaojishis"></td>
+            </tr>
+            <tr>
+                <td class="fes_list_nums"></td>
+                <td>中秋节</td>
+                <td class="nonglis">八月十五</td>
+                <td class="jnnlsrs"></td>
+                <td class="mnnlsrs"></td>
+                <td class="nldaojishis"></td>
+            </tr>
+            <tr>
+                <td class="fes_list_nums"></td>
+                <td>重阳节</td>
+                <td class="nonglis">九月初九</td>
+                <td class="jnnlsrs"></td>
+                <td class="mnnlsrs"></td>
+                <td class="nldaojishis"></td>
+            </tr>
+
+            <tr>
+                <th rowspan="8">特殊节日</th>
+                <td class="fests_list_nums"></td>
+                <td>母亲节</td>
+                <td class="nonglis">五月第二个星期天</td>
+                <td id="jnmuqinjies"></td>
+                <td id="mnmuqinjies"></td>
+                <td id="muqinjie_daojishis"></td>
+            </tr>
+            <tr>
+                <td class="fests_list_nums"></td>
+                <td>父亲节</td>
+                <td class="nonglis">六月第三个星期天</td>
+                <td id="jnfuqinjies"></td>
+                <td id="mnfuqinjies"></td>
+                <td id="fuqinjie_daojishis"></td>
+            </tr>
+        </table>
+</body>
+</html>
