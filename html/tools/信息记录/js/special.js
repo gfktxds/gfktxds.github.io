@@ -6,7 +6,8 @@ function specals_c(nlmonth,nlday,i){
     jnnlsr[i].innerHTML = special_nl.cYear + '.' + special_nl.cMonth + "." + special_nl.cDay;
     special_nl_step = special_nl;
     if(special_nl_step.cYear != d_Year){
-        special_nl_bugou = calendar.lunar2solar(d_Year-1,calendar_nldjs.lMonth,calendar_nldjs.lDay);
+        // special_nl_bugou = calendar.lunar2solar(d_Year-1,calendar_nldjs.lMonth,calendar_nldjs.lDay);
+        special_nl_bugou = calendar.lunar2solar(d_Year-1,nlmonth,nlday);
         jnnlsr[i].innerHTML = special_nl_bugou.cYear + "." +  special_nl_bugou.cMonth + "." + special_nl_bugou.cDay;
     }
     //农历倒计时
@@ -24,7 +25,8 @@ function specals_c(nlmonth,nlday,i){
     mnnlsr[i].innerHTML=special_nl.cYear + "." +  special_nl.cMonth + "." + special_nl.cDay;
 
     if(special_nl.cYear != d_Year+1){
-        special_nl_bugou = calendar.lunar2solar((d_Year),calendar_nldjs.lMonth,calendar_nldjs.lDay);
+        // special_nl_bugou = calendar.lunar2solar((d_Year),calendar_nldjs.lMonth,calendar_nldjs.lDay);
+        special_nl_bugou = calendar.lunar2solar((d_Year),nlmonth,nlday);
         mnnlsr[i].innerHTML=special_nl_bugou.cYear + "." +  special_nl_bugou.cMonth + "." + special_nl_bugou.cDay;
     }
 }
