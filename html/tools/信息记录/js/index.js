@@ -6,7 +6,8 @@
     var d_month=date.getMonth() +1;     //读取当前月份
     var d_day = date.getDate();         //读取当前日期
     var slist_num = document.getElementsByClassName('slist_nums')       //获取同学序号栏
-    var flist_num = document.getElementsByClassName('flist_nums')       //获取家人亲戚序号栏
+    var flist_num = document.getElementsByClassName('flist_nums')       //获取家人亲戚朋友序号栏
+    var plist_num = document.getElementsByClassName('plist_nums')       //获取工作序号栏
     var birth = document.getElementsByClassName("births");              //获取出生年份栏
     var age = document.getElementsByClassName("ages");                  //获取年龄栏
     var yldate = document.getElementsByClassName('yldatas');            //获取阳历出生日期栏
@@ -22,6 +23,7 @@
     function loading_c(){
         list_num_c(flist_num);  // 家人列表序号
         list_num_c(slist_num);  // 同学列表序号
+        list_num_c(plist_num);  // 工作列表序号
         age_c();                // 执行年龄计算
         xingzuo_c();            // 执行星座计算
         daojishi_c();           // 执行生日倒计时计算
