@@ -10,3 +10,6 @@ table,td,th,tr{
     border: 1px solid #000;
 }
 
+.shoujis{
+    display: none;
+}
