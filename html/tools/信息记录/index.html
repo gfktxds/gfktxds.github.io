@@ -32,6 +32,7 @@
                 <th>距离阳历生日(/天)</th>
                 <th>距离农历生日(/天)</th>
                 <th class="shoujis">手机号码</th>
+                
             </tr>
 
             <tr>
@@ -55,7 +56,7 @@
                 <td>刘国文</td>
                 <td class="births">1974</td>
                 <td class="yldatas">10.16</td>
-                <td class="nonglis" id="specials">五月十六</td> 
+                <td class="nonglis" id="specials">五月十六</td> <!--由于单独计算农历日期的特殊性，需要确定序号，在这一条以上加内容都需要在index.js中修改单独计算的序号，否则会显示空，且导致上一行计算错误-->
                 <td class="ages"></td>
                 <td class="shengxiaos"></td>
                 <td class="xingzuos"></td>
@@ -247,7 +248,7 @@
             </tr>
 
             <tr>
-                <th rowspan="9">大学同学</th>        <!--添加人数使，需要同时修改rowspan数值，rowspan是纵向合并单元格，要合并多少格，就填多少-->
+                <th rowspan="10">大学同学</th>        <!--添加人数使，需要同时修改rowspan数值，rowspan是纵向合并单元格，要合并多少格，就填多少-->
                 <td class="slist_nums"></td>
                 <td>李佳明</td>
                 <td class="births">2000</td>
@@ -382,14 +383,28 @@
                 <td class="nldaojishis"></td>
                 <td class="shoujis">15751763652</td>
             </tr>
-
             <tr>
-                <th rowspan="5">工作</th>     <!-- 增加类型的方法是，复制这一板块，然后将第一个class“list_nums”这玩意换个名称，然后到index.js文件中加上var 以及第一个函数中的运行，参照里面已有的即可 -->
+                <td class="slist_nums"></td>
+                <td></td>
+                <td class="births"></td>
+                <td class="yldatas"></td>
+                <td class="nonglis"></td>
+                <td class="ages"></td>
+                <td class="shengxiaos"></td>
+                <td class="xingzuos"></td>
+                <td class="jnnlsrs"></td>
+                <td class="mnnlsrs"></td>
+                <td class="daojishis"></td>
+                <td class="nldaojishis"></td>
+                <td class="shoujis"></td>
+            </tr>
+            <tr>
+                <th rowspan="100">工作</th>     <!-- 增加类型的方法是，复制这一板块，然后将第一个class“list_nums”这玩意换个名称，然后到index.js文件中加上var 以及第一个函数中的运行，参照里面已有的即可 -->
                 <td class="plist_nums"></td>
                 <td>李皖龙</td>
                 <td class="births">2000</td>
                 <td class="yldatas">04.16</td>
-                <td class="nonglis" id="specials">三月十五</td>
+                <td class="nonglis" id="specials">三月十五</td>     <!--由于单独计算农历日期的特殊性，需要确定序号，在这一条以上加内容都需要在index.js中修改单独计算的序号，否则会显示空，且导致上一行计算错误-->
                 <td class="ages"></td>
                 <td class="shengxiaos"></td>
                 <td class="xingzuos"></td>
@@ -443,6 +458,51 @@
                 <td class="daojishis"></td>
                 <td class="nldaojishis"></td>
                 <td class="shoujis">18962052652</td>
+            </tr>
+            <tr>
+                <td class="plist_nums"></td>
+                <td>丁胜</td>
+                <td class="births">1992</td>
+                <td class="yldatas">03.24</td>
+                <td class="nonglis"></td>
+                <td class="ages"></td>
+                <td class="shengxiaos"></td>
+                <td class="xingzuos"></td>
+                <td class="jnnlsrs"></td>
+                <td class="mnnlsrs"></td>
+                <td class="daojishis"></td>
+                <td class="nldaojishis"></td>
+                <td class="shoujis"></td>
+            </tr>
+            <tr>
+                <td class="plist_nums"></td>
+                <td>张振辉</td>
+                <td class="births">1994</td>
+                <td class="yldatas">09.30</td>
+                <td class="nonglis"></td>
+                <td class="ages"></td>
+                <td class="shengxiaos"></td>
+                <td class="xingzuos"></td>
+                <td class="jnnlsrs"></td>
+                <td class="mnnlsrs"></td>
+                <td class="daojishis"></td>
+                <td class="nldaojishis"></td>
+                <td class="shoujis"></td>
+            </tr>
+            <tr>
+                <td class="plist_nums"></td>
+                <td>侯博义</td>
+                <td class="births">2002</td>
+                <td class="yldatas">09.26</td>
+                <td class="nonglis"></td>
+                <td class="ages"></td>
+                <td class="shengxiaos"></td>
+                <td class="xingzuos"></td>
+                <td class="jnnlsrs"></td>
+                <td class="mnnlsrs"></td>
+                <td class="daojishis"></td>
+                <td class="nldaojishis"></td>
+                <td class="shoujis">18142681389</td>
             </tr>
             <tr>
                 <td class="plist_nums"></td>
