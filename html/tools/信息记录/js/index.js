@@ -32,7 +32,7 @@
         jnnlsr_c();             //执行今年农历生日日期计算
         specals_c(5,16,1);      //特殊情况，specal_c(农历月份，农历日期，从上往下数第i+1行)
         specals_c(5,2,2);
-        specals_c(3,15,23);
+        specals_c(3,15,24);
         err_c();
     }
 
