@@ -122,12 +122,13 @@
             
                 <article id="page">
                     <div class="article-container">
-                        <h2 class="purplebows" id="ia_musi">音乐
+                        <h2 class="purplebows" id="ia_musi"><a onclick="music_one_fold('music_all')" style="text-decoration:none;">音乐</a>
                             <a class="social-icon" onclick="mus_change(this)" style="text-decoration:none;">
                             <i id="mus_li" class="fa fa-heart" style="font-size:15px;"></i>
                             <i id="mus_self" class="fa fa-heartbeat" style="font-size:15px; display: none;"></i>
                             <i id="mus_pure" class="fa fa-headphones" style="font-size:15px; display: none;"></i></a>
                         </h2>
+                          <div id="music_all">
                             <div id="music_li">
                                <meting-js auto="https://y.qq.com/n/ryqq/playlist/8444199365.html">
                                </meting-js>
@@ -138,6 +139,7 @@
                             <div id="music_pure" style="display:none;">
                                <div id="m_pure"></div>
                             </div>
+                          </div>
                             
                             <!--Aplayer，一个音乐播放器插件-->
                             <script src="static/plugin/aplayer-1.10.1/dist/APlayer.min.js"></script>
