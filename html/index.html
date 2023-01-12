@@ -74,7 +74,7 @@
                             <div class="item-headline">
                                 <i class="fa fa-list" aria-hidden="true"></i>
                                 <span>目录
-                                  <a class="social-icon" onclick="one_fold('fold_list')" style="text-decoration:none;">
+                                  <a class="social-icon" onclick="one_fold_list('fold_list')" style="text-decoration:none;">
                                   <i id="i_eyes_home" class="fa fa-eye"></i>
                                   <i id="i_eyes_slash_home"class="fa fa-eye-slash" style="display:none;"></i>
                                   </a>
@@ -99,13 +99,40 @@
                     </div>
 
                 </div>
+
                 <article id="page">
                     <div class="article-container">
-                        <h2>
-                        <div id="ia_index" class="purplebows">
-                        导航
-                        </h2>
-                        <div class="tool">
+                        <a class="beautifulbows" id="moshi_change" onclick="one_fold_moshi()" style="text-decoration:none;">
+                            <div id="moshi_pp" style="display:inline;">平铺模式</div>
+                            <div id="moshi_jj" style="display:none;">简洁模式</div>
+                         </a>
+                         
+                        <!-- <div id="moshipp"> -->
+                        <div>  
+                          <h2 id="dao_jj" style="display:none;">
+                            <hr>
+                            <a id="ic_index" class="purplebows l_tit" style="display:inline;" onclick="click_show('ib_index')"><nobr>导航</nobr>&nbsp;</a>
+                            <a id="ic_search" class="purplebows l_tit" style="display:inline;" onclick="click_show('ib_search')">&nbsp;<nobr>搜索引擎</nobr>&nbsp;</a>
+                            <a id="ic_film" class="purplebows l_tit" style="display:inline;" onclick="click_show('ib_film')">&nbsp;<nobr>追番</nobr>&nbsp;</a>
+                            <a id="ic_vid" class="purplebows l_tit" style="display:inline;" onclick="click_show('ib_vid')">&nbsp;<nobr>视频</nobr>&nbsp;</a>
+                            <a id="ic_mus" class="purplebows l_tit" style="display:inline;" onclick="click_show('ib_mus')">&nbsp;<nobr>音乐</nobr>&nbsp;</a>
+                            <a id="ic_document" class="rainbows l_tit" style="display:inline;" onclick="click_show('ib_document')">&nbsp;<nobr>科研工具</nobr>&nbsp;</a>
+                            <a id="ic_tran" class="purplebows l_tit" style="display:inline;" onclick="click_show('ib_tran')">&nbsp;<nobr>翻译</nobr>&nbsp;</a>
+                            <a id="ic_stu" class="purplebows l_tit" style="display:inline;" onclick="click_show('ib_stu')">&nbsp;<nobr>学习助手</nobr>&nbsp;</a>
+                            <a id="ic_dow" class="purplebows l_tit" style="display:inline;" onclick="click_show('ib_dow')">&nbsp;<nobr>下载工具</nobr>&nbsp;</a>
+                            <a id="ic_res" class="purplebows l_tit" style="display:inline;" onclick="click_show('ib_res')">&nbsp;<nobr>闲暇之余</nobr>&nbsp;</a>
+                            <a id="ic_ice"  class="purplebows l_tit" style="display:inline;" onclick="click_show('ib_ice')">&nbsp;<nobr>破冰世界</nobr>&nbsp;</a>
+                            <a id="ic_col" class="purplebows l_tit" style="display:inline;" onclick="click_show('ib_col')">&nbsp;<nobr>收藏</nobr>&nbsp;</a>
+                            <a id="ic_too" class="purplebows l_tit" style="display:inline;" onclick="click_show('ib_too')">&nbsp;<nobr>特殊工具</nobr>&nbsp;</a>
+                          </h2>   
+                         
+                          <h2 id="dao_pp">
+                          <div id="ia_index" class="purplebows little_tit">
+                          导航
+                          </h2>
+                        </div> 
+
+                        <div id="ib_index" class="tool">
                                <div class="hgrey_alink">
                                     <a href="https://adzhp.cn/">爱达杂货铺&nbsp;</a>
                                     <a href="https://webjike.com/">小呆导航&nbsp;</a>
@@ -114,50 +141,52 @@
                                     <a href="http://tooool.org/">程序员导航&nbsp;</a> 
                                     <a href="https://nav.geekape.net/">极客猿梦导航&nbsp;</a> 
                                     <a href="http://www.hippter.com/">PPT模板网站导航&nbsp;</a> 
-                                    <a href="http://www.esjson.com/">ESJON在线工具&nbsp;</a> 
-                                    
+                                    <a href="http://www.esjson.com/">ESJON在线工具&nbsp;</a>          
                                </div>
+                            <hr class="tool_hr">
                         </div>
 
-                        <hr>
                         <h2 >
-                           <div id="ia_search" class="purplebows">
+                           <div id="ia_search" class="purplebows little_tit">
                          搜索引擎
                         </h2>
-                        <div class="tool">
+                        <div id="ib_search" class="tool">
                                <div class="hgrey_alink">
                                     <a href="http://www.baidu.com/">百度&nbsp;</a>
                                     <a href="https://cn.bing.com/">必应&nbsp;</a> 
                                     <a href="https://www.google.com.hk/webhp?hl=zh-CN&sourceid=cnhp&gws_rd=ssl">谷歌&nbsp;</a> 
                                </div>
+                            <hr class="tool_hr">
                         </div>
 
 
-                        <hr>
-                        <h2 id="ia_film" class="purplebows">追番</h2>
-                        <div class="tool">
+                        
+                        <h2 id="ia_film" class="purplebows little_tit">追番</h2>
+                        <div id="ib_film" class="tool">
                                <div class="hgrey_alink">
                                     <a href="https://www.bilibili.com/">哔哩哔哩&nbsp;</a>
                                     <a href="https://omofun.tv/">OmoFun动漫视频网&nbsp;</a>
                                     <a href="#">樱花动漫(暂无链接)&nbsp;</a>
 
                                </div>
+                            <hr class="tool_hr">   
                         </div>
 
-                        <hr>
-                        <h2 id="ia_vid" class="purplebows">视频</h2>
-                        <div class="tool">
+                        
+                        <h2 id="ia_vid" class="purplebows little_tit">视频</h2>
+                        <div id="ib_vid" class="tool">
                                <div class="hgrey_alink">
                                     <a href="https://www.douyin.com/">抖音网页版&nbsp;</a>
                                     <a href="https://www.youku.com/">优酷&nbsp;</a>
                                     <a href="https://www.iqiyi.com/">爱奇艺&nbsp;</a>
                                     <a href="https://v.qq.com/">腾讯视频&nbsp;</a>
                                </div>
+                            <hr class="tool_hr">
                         </div>
 
-                        <hr>
-                        <h2 id="ia_mus" class="purplebows">音乐</h2>
-                        <div class="tool">
+                        
+                        <h2 id="ia_mus" class="purplebows little_tit">音乐</h2>
+                        <div id="ib_mus" class="tool">
                                <div class="hgrey_alink">
                                     <a href="https://lvyueyang.github.io/web-music/app/">周杰伦歌单&nbsp;</a>
                                     <a href="https://rainymood.com/">下雨声&nbsp;</a><br>
@@ -169,15 +198,14 @@
                                     <a href="https://www.ytmp3.cn/">扬天音乐&nbsp;</a>
                                     <a href="http://song.oeecc.com/">天籁村音乐网&nbsp;</a>
                                     <a href="https://music.gimhoy.com/">Gimhoy音乐盘&nbsp;</a>
-                                    
-                                    
                                </div>
+                            <hr class="tool_hr">
                         </div>
 
 
-                        <hr>
-                        <h2 id="ia_document" class="rainbows">科研工具</h2>
-                        <div class="tool">
+                        
+                        <h2 id="ia_document" class="rainbows little_tit">科研工具</h2>
+                        <div id="ib_document" class="tool">
                                <div class="hgrey_alink">
                                     <a href="https://www.cnki.net/">知网&nbsp;</a>
                                     <a href="https://scholar.google.com/">谷歌学术&nbsp;</a>
@@ -187,11 +215,12 @@
                                     <a href="https://www.drugfuture.com/cnpat/cn_patent.asp">专利下载&nbsp;</a>
                                     <a href="https://openstd.samr.gov.cn/bzgk/gb/index">国家标准阅读&nbsp;</a>
                                </div>
+                            <hr class="tool_hr">
                         </div>
 
-                        <hr>
-                        <h2 id="ia_tran" class="purplebows">翻译</h2>
-                        <div class="tool">
+                        
+                        <h2 id="ia_tran" class="purplebows little_tit">翻译</h2>
+                        <div id="ib_tran" class="tool">
                                <div class="hgrey_alink">
                                     <a href="https://www.deepl.com/translator">DeepL翻译&nbsp;</a> 
                                     <a href="https://translate.google.cn/">谷歌翻译&nbsp;</a> 
@@ -199,20 +228,22 @@
                                     <a href="https://fanyi.baidu.com/">百度翻译&nbsp;</a> 
                                     <a href="https://fanyi.sogou.com/text">搜狗翻译&nbsp;</a> 
                                </div>
+                            <hr class="tool_hr">       
                         </div>
 
-                        <hr>
-                        <h2 id="ia_stu" class="purplebows">学习助手</h2>
-                        <div class="tool">
+                        
+                        <h2 id="ia_stu" class="purplebows little_tit">学习助手</h2>
+                        <div id="ib_stu" class="tool">
                                <div class="hgrey_alink">
                                     <a href="https://ptable.com/?lang=zh-hans#%E6%80%A7%E8%B4%A8">元素周期表&nbsp;</a> 
                                </div>
+                            <hr class="tool_hr"> 
                         </div>
 
 
-                        <hr>
-                        <h2 id="ia_dow" class="purplebows">下载工具</h2>
-                        <div class="tool">
+                        
+                        <h2 id="ia_dow" class="purplebows little_tit">下载工具</h2>
+                        <div id="ib_dow" class="tool">
                                <div class="hgrey_alink">
                                     <a href="http://tools.liumingye.cn/music/?page=searchPage">免费音乐下载&nbsp;</a> 
                                     <a href="http://www.jijidown.com/">B站视频下载&nbsp;</a> <br>
@@ -220,12 +251,13 @@
                                     <a href="https://maple3142.github.io/mergemp4/">视频音频合成&nbsp;</a> 
                                     
                                </div>
+                            <hr class="tool_hr">
                         </div>
 
 
-                        <hr>
-                        <h2 id="ia_res" class="purplebows">闲暇之余</h2>
-                        <div class="tool">
+                        
+                        <h2 id="ia_res" class="purplebows little_tit">闲暇之余</h2>
+                        <div id="ib_res" class="tool">
                                <div class="hgrey_alink">
                                     <a href="https://www.dbbqb.com/">表情包大全&nbsp;</a>
                                     <a href="https://louisalflame.github.io/CFantasyClick/index.html">在线修仙&nbsp;</a> 
@@ -238,22 +270,24 @@
                                     <a href="https://time.is/">精准时间&nbsp;</a> 
                                     <a href="https://www.nihaowua.com/">你好污啊&nbsp;</a> 
                                </div>
+                            <hr class="tool_hr"> 
                         </div>
 
 
-                        <hr>
-                        <h2 id="ia_ice" class="purplebows">破冰世界</h2>
-                        <div class="tool">
+                        
+                        <h2 id="ia_ice" class="purplebows little_tit">破冰世界</h2>
+                        <div id="ib_ice" class="tool">
                                <div class="hgrey_alink">
                                     <a href="https://www.youtube.com/">YouTube&nbsp;</a>
                                     <a href="https://twitter.com/home">Twitter&nbsp;</a>
                                     <a href="https://github.com/">Github&nbsp;</a>
                                </div>
+                            <hr class="tool_hr">   
                         </div>
 
-                        <hr>
-                        <h2 id="ia_col" class="purplebows">收藏</h2>
-                        <div class="tool">
+                        
+                        <h2 id="ia_col" class="purplebows little_tit">收藏</h2>
+                        <div  id="ib_col"  class="tool">
                                <div class="hgrey_alink">
                                     <a href="https://www.thinkcmf.com/font/font_awesome/icons.html">font awesome图标代码大全&nbsp;</a> 
                                     <a href="http://busuanzi.ibruce.info/">不蒜子访客计数&nbsp;</a> 
@@ -265,20 +299,23 @@
                                     <a href="https://www.67tool.com/">即时工具</a>
                                                                     
                                </div>
+                            <hr class="tool_hr">  
                         </div>
 
-                        <hr>
-                        <h2 id="ia_too" class="purplebows">特殊工具</h2>
-                        <div class="tool">
+                       
+                        <h2 id="ia_too" class="purplebows little_tit">特殊工具</h2>
+                        <div id="ib_too" class="tool">
                                <div class="hgrey_alink">
                                     <a href="https://robinmoisson.github.io/staticrypt/">静态网页加密&nbsp;</a>
                                     <a href="tools/密码生成器/index.html">密码生成器&nbsp;</a> 
                                </div>
+                            
                         </div>
+                         
 
-<!--插入点-->
-
-                    </div>
+                       <!-- </div>  moshi -->
+ 
+                   </div>
                 </article>
             </div>
         </main>
