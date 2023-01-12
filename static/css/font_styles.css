@@ -1,3 +1,33 @@
+/* body{
+    background: url('../img/background.jpg') center no-repeat fixed;
+    background-size:100% 100%;
+} */
+.beautifulbows{
+    font-size: 20pt;
+    font-weight: bold;
+    color: white;
+    background-image: linear-gradient(
+        to right,
+        #FF0000, #871F78, #8E236B, #D9D9F3,
+        #00FF00, #6B238E, #32CD99, #5959AB,       
+        #0000FF, #2F4F4F, #3232CD, #6F4242,       
+        #FF00FF, #97694F, #6B8E23, #BC1717,       
+        #00FFFF, #7093DB, #EAEAAE, #238E68,
+        #FFFF00, #855E42, #9370DB, #6B4226, 
+        #545454, #426F42, #8E6B23, #E6E8FA,
+        #70DB93, #856363, #7F00FF, #3299CC,
+        #5C3317, #D19275, #7FFF00, #6B8E23,
+        #9F5F9F, #8E2323, #70DBDB, #007FFF,
+        #B5A642, #238E23, #DB7093, #FF1CAE,
+        #D9D919, #CD7F32, #A68064, #00FF7F,
+        #FF0000
+    ); /* 注意颜色的始终要相同,不然就会有突变颜色线条,影响视觉*/
+    background-size: 110vw;
+   -webkit-background-clip: text;
+   color: transparent;
+    animation: sliding 180s linear infinite;
+    /* 颜色变化的速度 */
+}
 .purplebows{
         font-size: 20pt;
         font-weight: bold;
@@ -100,4 +130,8 @@ div#a_publish i{
 }
 .c_blue{
     color:#66FFFF;
+}
+
+#moshi_change{
+    font-size: 30px;
 }
