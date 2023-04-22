@@ -41,7 +41,14 @@
 
 <body onload="parent.location='#body-wrap'">
     <div id="body-wrap">
-        <nav class="not_index_bg" id="nav" style="background-image:url(https://api.ixiaowai.cn/api/api.php)">
+        <nav class="not_index_bg" id="nav">
+                <script>
+                    window.addEventListener("load", function(e){
+                        document.getElementById("nav").innerHTML = '<iframe src="https://api.r10086.com/PPT/PPT3.php?PPT=原神" width="100%" height="100%" style="border: 0;"></iframe>';
+                           });
+            </script>
+            <!--来源于https://img.r10086.com/-->
+        </nav>
 		<div class='title'>
             <div id="page_site-info">
                 <div id="site-title">
@@ -60,7 +67,6 @@
                     </script>
                 </div>
             </div>
-        </nav>
         <main id="content-outer">
             <div class="layout_page" id="content-inner">
                 <div class="aside_content" id="aside_content">
@@ -68,7 +74,7 @@
                         <div class="card-content">
                             <div class="card-info-avatar is-center">
                                 <img class="avatar-img"
-                                    src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201702%2F06%2F20170206204000_eNiGY.jpeg&refer=http%3A%2F%2Fb-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1652935349&t=115d52c5581931fae541e9da1fb6fa72"
+                                    src="https://img1.baidu.com/it/u=627075109,2587124419&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"
                                     alt="avatar">
                                 <div class="author-info__name">白色、那么干净</div>
                                 <div class="author-info__description">梧桐叶上，点点露珠零</div>
@@ -111,7 +117,7 @@
                             </div>
                             <div id="clock-box">
                                <div id="clock"></div>
-                               <span>（唯</span><span class="c_green">时光</span><span>和</span><span class="c_blue">雪</span><span>不可辜负）</span>
+                               <span>（唯</span><span class="c_green">____</span><span>和</span><span class="c_blue">____</span><span>不可辜负）</span>
                             </div>
                         </div>
                     </div>
