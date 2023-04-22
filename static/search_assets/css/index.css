@@ -1,5 +1,5 @@
 body{
-    background: url('https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fss2.meipian.me%2Fusers%2F22794293%2Forigina8f5991e8c3245966e6b15c3ffa3cf1c.jpg%3Fmeipian-raw%2Fbucket%2Fivwen%2Fkey%2FdXNlcnMvMjI3OTQyOTMvb3JpZ2luYThmNTk5MWU4YzMyNDU5NjZlNmIxNWMzZmZhM2NmMWMuanBn%2Fsign%2F5cf91103c7d9d1935f62ecbec3eed1ec.jpg&refer=http%3A%2F%2Fss2.meipian.me&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1675993936&t=501af50dc2d806460a48b68ea07ebe65');
+    background: url('../pic/index_bg_big.webp');
     background-size: cover;
     filter: brightness(0.9);
     width: 100%;
@@ -48,7 +48,7 @@ input::-moz-placeholder { /* Firefox 19+ */
         display: block;
     }
     body{
-        background: url('https://mms1.baidu.com/it/u=3164784129,460689280&fm=253&app=138&f=JPEG&fmt=auto&q=75?w=625&h=500');
+        background: url('../pic/index_bg_small.webp');
         background-size: cover;
         filter: brightness(0.9);
         width: 100%;
